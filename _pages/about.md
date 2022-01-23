@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About sport, science, and technology"
+title: "About me"
 excerpt: "Sport, science, technology"
 author_profile: true
 redirect_from: 

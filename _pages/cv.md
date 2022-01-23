@@ -9,11 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
+You can read a more extended version of this CV at this [Overleaf link](https://www.overleaf.com/read/myfwfsnndgzw).
+
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Industrial Engineering, University of Trento, Italy, 2009
+* M.S. in Mechatronics Engineering, University of Trento, Italy, 2011
+* Ph.D. in Science of Physical Exercise and Human Movement, University of Verona, Italy, 2016
 
 Work experience
 ======

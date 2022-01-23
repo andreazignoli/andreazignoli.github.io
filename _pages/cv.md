@@ -17,6 +17,11 @@ Education
 * M.S. in Mechatronics Engineering, University of Trento, Italy, 2011
 * Ph.D. in Science of Physical Exercise and Human Movement, University of Verona, Italy, 2016
 
+Current positions
+======
+* Data scientist at [Supersapiens](https://www.supersapiens.com/en-EN/)
+* Data scientist at [Athletica](https://athletica.ai/)
+
 Work experience
 ======
 * Summer 2015: Research Assistant
@@ -56,6 +61,6 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Service
 ======
-* Currently signed in to 43 different slack teams
+* Assistant Editor at the [Sports Engineering](https://www.springer.com/journal/12283) journal

@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I'm Andrea, a self-employed engineer who creates mathematical models of sport physiology and performance. 
+👋 Hi, I'm Andrea, a self-employed engineer who creates mathematical models of sport physiology and performance. 
 
 Why mathematical models?
 ======

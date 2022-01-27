@@ -12,7 +12,9 @@ redirect_from:
 
 Why mathematical models?
 ======
-Modelling lies at the heart of how we understand the world. Mathematical modelling is the process to describe a system (an emerging property of the world we live in) in mathematical terms. The clear advantage of having our models written in a communicable language is that we can share our ideas with the world. If we are lucky enough, we share ideas that can be both innovative and helpful, and we get to participate in advancing the human knowledge. 
+Modelling lies at the heart of how we understand the world and its emerging properties. *Mathematical* modelling, in particular, is the process to describe a system with mathematical terms. 
+
+The clear advantage of having our models written in a communicable language is that we can share our ideas with the world. If we are lucky enough, we share ideas that can be both innovative and helpful, and we get to participate in advancing the human knowledge. 
 
 Why sport physiology and performance?
 ======

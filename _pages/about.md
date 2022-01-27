@@ -20,15 +20,11 @@ I might be partly responsible for:
 
 My phylosophy
 ======
-I'm equally interest in each phase of modelling: conceptualisation and formalisation, data collection and processing, model development and model deployment. 
-
-I always value more the model that can teach us more in return. I love adding intelligence to the process. Ironically, more intelligence usually means less technology. Sensors come and go, but learning is forever. 
+I'm equally interest in each phase of modelling: conceptualisation and formalisation, data collection and processing, model development and model deployment. I always value more the model that can teach us more in return. I love adding intelligence to the process. Ironically, more intelligence usually means less technology. Sensors come and go, but learning is forever. 
 
 Why mathematical models?
 ======
-Modelling lies at the heart of how we understand the world and its emerging properties. *Mathematical* modelling, in particular, is the process to describe a system with mathematical terms. 
-
-The clear advantage of having our models written in a communicable language is that we can share our ideas with the world. If we are lucky enough, we share ideas that can be both innovative and helpful, and we get to participate in advancing the human knowledge. 
+Modelling lies at the heart of how we understand the world and its emerging properties. *Mathematical* modelling, in particular, is the process to describe a system with mathematical terms. The clear advantage of having our models written in a communicable language is that we can share our ideas with the world. If we are lucky enough, we share ideas that can be both innovative and helpful, and we get to participate in advancing the human knowledge. 
 
 Why sport physiology and performance?
 ======

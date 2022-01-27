@@ -27,25 +27,25 @@ Current positions
 Work experience
 ======
 
-* Winter 2021- Ongoing: Self-employed engineer
+* __Winter 2021- Ongoing__: Self-employed engineer
   * Duties include: Modelling and data process
 
-* Fall 2017- Fall 2021: Post-doctoral Researcher 
+* __Fall 2017- Fall 2021__: Post-doctoral Researcher 
   * University of Trento, Italy
   * Duties included: Modelling multiple aspects of human sport peformance
   * Supervisor: Professor F. Biral, PhD; Professor P. Bosetti, PhD
 
-* Fall 2016- Summer 2017: Post-doctoral Researcher 
+* __Fall 2016- Summer 2017__: Post-doctoral Researcher 
   * University of Yokohama, Japan
   * Duties included: Design of rehabilitation robots
   * Supervisor: Professor T. Shimono, PhD
 
-* Spring 2012- Summer 2016: Research Assistant, Doctoral Fellowship 
+* __Spring 2012- Summer 2016__: Research Assistant, Doctoral Fellowship 
   * University of Verona, Italy
   * Duties included: Data collection, data analysis and functional evaluation
   * Supervisor: B. Pellegrini, PhD
 
-* Spring 2011- Fall 2011: Post-graduate research Assistant
+* __Spring 2011- Fall 2011__: Post-graduate research Assistant
   * University of Trento, Italy
   * Duties included: Modelling driver behaviour
   * Supervisor: Professor F. Biral, PhD
@@ -53,32 +53,33 @@ Work experience
 Skills
 ======
 
-* Data collection
+* __Data collection__
   * Cardiopulmnary exercising test
   * Electromyography
   * Cycling power
   * Motion capture
   * Strain gauges
 
-* Data pre-processing
-  * Basic frequency-domain analysis
-  * Intermediate time-domain analysis 
+* __Data processing__
+  * Basic: frequency-domain analysis
+  * Basic: image processing
+  * Advanced: time-domain analysis
 
-* Modelling
-  * Advanced First principle models
-  * Basic statistics and machine learnign 
-  * Intermediate deep learning (LSTM, CNN)
+* __Modelling__
+  * Basic: statistics and machine learnign 
+  * Intermediate: deep learning (LSTM, CNN with Tensorflow)
+  * Advanced: First principle models
 
-* Deployment
-  * Basic Shiny
-  * Basic Docker
-  * Basic AWS
+* __Deployment__
+  * Basic: Shiny
+  * Basic: Docker
+  * Basic: AWS
 
-* Software
-  * Basic R
-  * Advanced Matlab
-  * Intermediate Python
-  * Basic/Intermediate Maple
+* __Software__
+  * Basic: R
+  * Basic/Intermediate: Maple
+  * Intermediate: Python
+  * Advanced: Matlab
 
 Publications
 ======

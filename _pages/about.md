@@ -10,6 +10,14 @@ redirect_from:
 
 👋 Hi, I'm Andrea, a self-employed engineer who creates mathematical models of sport physiology and performance. 
 
+I might be partly responsible for:
+
+🫁 The spread of deep learning technologies in the process of cardiopulmonary exercise tests
+
+🚴 The introduction of the concept of the adherence ellipse in road cycling
+
+---
+
 Why mathematical models?
 ======
 Modelling lies at the heart of how we understand the world and its emerging properties. *Mathematical* modelling, in particular, is the process to describe a system with mathematical terms. 

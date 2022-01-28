@@ -20,7 +20,7 @@ I might be partly responsible for:
 
 My phylosophy
 ======
-I'm equally interest in each phase of modelling: conceptualisation and formalisation, data collection and processing, model development and model deployment. I always value more the model that can teach us more in return. I love adding intelligence to the process. Ironically, more intelligence usually means less technology. Sensors come and go, but learning is forever. 
+I'm equally interest in each phase of modelling: conceptualisation and formalisation, data collection and processing, model development and model deployment. I always value more the model that can teach us more in return. I love adding intelligence to the process. Ironically, more intelligence usually means less technology. And that's the way it should be: sensors come and go, but learning is forever. 
 
 Why mathematical models?
 ======

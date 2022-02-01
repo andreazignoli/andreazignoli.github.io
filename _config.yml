@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Andrea Zignoli"
-  avatar           : "profile_pic.JPEG"
+  avatar           : "profile_pic.jpg"
   bio              : "I create mathematical models for sport performance analysis"
   location         : "Odense, Denmark"
   employer         :

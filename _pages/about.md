@@ -18,9 +18,9 @@ I might be partly responsible for:
 
 ---
 
-My phylosophy
+My philosophy
 ======
-I'm equally interest in each phase of modelling: conceptualisation and formalisation, data collection and processing, model development and model deployment. I always value more the model that can teach us more in return. I love adding intelligence to the process. Ironically, more intelligence usually means less technology. And that's the way it should be: sensors come and go, but learning is forever. 
+I'm equally interest in each phase of modelling: conceptualization and formalization, data collection and processing, model development and model deployment. I always value more the model that can teach us more in return. I love adding intelligence to the process. Ironically, more intelligence usually means less technology. And that's the way it should be: sensors come and go, but learning is forever. 
 
 Why mathematical models?
 ======
@@ -28,5 +28,5 @@ Modelling lies at the heart of how we understand the world and its emerging prop
 
 Why sport physiology and performance?
 ======
-I enrolled in an engineering course to study robotics, and I ended up by studying the most wondefully made machine: the human body. Sport performance requires a combination of the best qualities of a human body, hence is human movement in its best form. Physiology is what makes movement possible, hence is human movement in its fundametal terms. 
+I enrolled in an engineering course to study robotics, and I ended up by studying the most wonderfully made machine: the human body. Sport performance requires a combination of the best qualities of a human body, hence is human movement in its best form. Physiology is what makes movement possible, hence is human movement in its fundamental terms. 
  

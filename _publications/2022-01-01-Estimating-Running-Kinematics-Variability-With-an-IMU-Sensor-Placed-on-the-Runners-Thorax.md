@@ -1,9 +1,9 @@
 ---
-title: "Estimating Running Kinematics Variability With an IMU Sensor Placed on the Runner&apos;s Thorax"
+title: "Estimating running kinematics variability with an IMU sensor placed on the runner&apos;s thorax"
 collection: publications
-permalink: /publication/2022-01-01-Estimating-Running-Kinematics-Variability-With-an-IMU-Sensor-Placed-on-the-Runners-Thorax
+permalink: /publication/2022-01-01-Estimating-running-kinematics-variability-with-an-IMU-sensor-placed-on-the-runners-thorax
 date: 2022-01-01
-venue: 'In the proceedings of Workshop on Sport, Technology and Research'
-citation: ' Andrea Zignoli,  Damiano Fruet,  Lourent Mourot, &quot;Estimating Running Kinematics Variability With an IMU Sensor Placed on the Runner&amp;apos;s Thorax.&quot; In the proceedings of Workshop on Sport, Technology and Research, 2022.'
+venue: 'In the proceedings of 2022 IEEE International Workshop on Sport, Technology and Research (STAR)'
+citation: ' Andrea Zignoli,  Damiano Fruet,  Laurent Mourot, &quot;Estimating running kinematics variability with an IMU sensor placed on the runner&amp;apos;s thorax.&quot; In the proceedings of 2022 IEEE International Workshop on Sport, Technology and Research (STAR), 2022.'
 ---
-Use [Google Scholar](https://scholar.google.com/scholar?q=Estimating+Running+Kinematics+Variability+With+an+IMU+Sensor+Placed+on+the+Runner&#x27;s+Thorax){:target="_blank"} for full citation
+Use [Google Scholar](https://scholar.google.com/scholar?q=Estimating+running+kinematics+variability+with+an+IMU+sensor+placed+on+the+runner&#x27;s+thorax){:target="_blank"} for full citation

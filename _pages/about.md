@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "About me"
-excerpt: "Sport, science, technology"
+excerpt: "Sport, engineering, science, technology"
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,11 +10,11 @@ redirect_from:
 
 👋 Hi, I'm Andrea, a self-employed engineer who creates mathematical models of sport physiology and performance. 
 
-I might be partly responsible for:
+I love ot work on:
 
-🫁 The spread of deep learning technologies in the process of cardiopulmonary exercise tests
+🫁 Deep learning technologies to process cardiopulmonary exercise test data
 
-🚴 The introduction of the concept of the adherence ellipse in road cycling
+🚴 Study cornering strategies in road cycling
 
 ---
 

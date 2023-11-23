@@ -10,7 +10,7 @@ redirect_from:
 
 👋 Hi, I'm Andrea, a self-employed engineer who creates mathematical models of sport physiology and performance. 
 
-I love ot work on:
+I love to work on:
 
 🫁 Deep learning technologies to process cardiopulmonary exercise test data
 

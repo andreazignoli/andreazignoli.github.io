@@ -21,13 +21,15 @@ Education
 Current positions
 ======
 
-* Data scientist at [Supersapiens](https://www.supersapiens.com/en-EN/)
 * Data scientist at [Athletica](https://athletica.ai/)
 
 Work experience
 ======
 
 * __Winter 2021- Ongoing__: Self-employed engineer
+  * Duties include: Modelling and data process
+
+* __Spring 2021- Spring 2024__: Data scientist at [Supersapiens](https://www.supersapiens.com/en-EN/)
   * Duties include: Modelling and data process
 
 * __Fall 2017- Fall 2021__: Post-doctoral Researcher 

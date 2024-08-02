@@ -1,6 +1,6 @@
 ---
 title: "Vehicle dynamics and cycling trajectories"
-excerpt: "We are fascinated by racing lines and trajectories <br/><img src='/images/art_of_descending_1.png' style='display: block; margin-left: auto; margin-right: auto; width: 50%;'>"
+excerpt: "We are fascinated by racing lines and trajectories <br/><img src='/images/art_of_descending_1.png' style='width: 50%;'>"
 collection: portfolio
 ---
 

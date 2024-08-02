@@ -1,5 +1,7 @@
 ---
-title: "The adherence ellipse in professional cyling races"
-excerpt: "<br/><img src='/images/gg_plot_info.png' style='width: 50%;'>"
+title: "The adherence ellipse in professional cycling races"
+excerpt: "<br/><img src='/images/gg_plot_info.png' style='display: block; margin-left: auto; margin-right: auto; width: 50%;'>"
 collection: portfolio
 ---
+
+<br/><img src='/images/gg_plot_info.png' style='display: block; margin-left: auto; margin-right: auto; width: 50%;'>

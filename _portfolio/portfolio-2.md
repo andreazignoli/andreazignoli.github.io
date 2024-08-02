@@ -4,6 +4,6 @@ excerpt: "Application of deep learning technologies to the process of cardiopulm
 collection: portfolio
 ---
 
-Taken from EJSS paper. 
+<div style="margin-top: 20px;"></div>
 
  <br/><img src='/images/oxynet.png' style='display: block; margin-left: auto; margin-right: auto; width: 50%;'>

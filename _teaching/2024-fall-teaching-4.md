@@ -1,14 +1,12 @@
 ---
-title: "Teaching assistant of the integrative lab didactic within the academic course of Technology and Innovation in Sports"
+title: "Course of Technology and Innovation in Sports"
 collection: teaching
-type: "Master degree in Physical Education and Sport. Academic year 2024-25"
+type: "Master's Degree in Physical Education and Sport, Academic Year 2024-25"
 permalink: /teaching/2024-fall-teaching-4
 venue: "University of Trento & University of Verona"
 date: 2024-11-01
-location: "Remote - and/or in person, Rovereto (Trento), Italy"
+location: "In person, Rovereto (Trento), Italy"
 ---
-
-# Syllabus Course in Mathematical Modelling for Sports Science
 
 **Technology and innovation in sport**,  
 **Mechatronics in Sport**,  

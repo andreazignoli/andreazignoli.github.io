@@ -24,9 +24,9 @@ Models are essential tools for understanding and interpreting the world around u
 
 Mathematical models are a particular subset of models, and they describe the world using the language of mathematics. In the act of writing the equations for these models, we refine our understanding of reality. Whether we're exploring trends in record-breaking achievements or analyzing the biomechanics of a leg-extension exercise, models help us formulate hypotheses, sharpen research questions, and challenge our assumptions.
 
-In my experience developing models for sports performance, I’ve observed that many sports scientists use these tools without fully understanding the principles behind their design. Worse still, they often dismiss a model as being “too complex” or “inaccurate.” Such judgments are often not based on solid reasoning, with tradition or reputation frequently influencing model selection more than a careful assessment of a model’s strengths and limitations.
+In my experience developing models for sports performance, I've observed that many sports scientists use these tools without fully understanding the principles behind their design. Worse still, they often dismiss a model as being “too complex” or “inaccurate.” Such judgments are often not based on solid reasoning, with tradition or reputation frequently influencing model selection more than a careful assessment of a model's strengths and limitations.
 
-Given the immense value of modelling in sports science, I believe that you can greatly benefit from a course on this subject. While it’s not necessary to dive deeply into advanced mathematical theory, it's important to provide an overview of the language, basic concepts, and the practical functionality of mathematical modelling. Although some foundational definitions and concepts may require effort to grasp, mastering them will unlock a world of opportunities.
+Given the immense value of modelling in sports science, I believe that you can greatly benefit from a course on this subject. While it's not necessary to dive deeply into advanced mathematical theory, it's important to provide an overview of the language, basic concepts, and the practical functionality of mathematical modelling. Although some foundational definitions and concepts may require effort to grasp, mastering them will unlock a world of opportunities.
 
 I hope this course will enhance your understanding of mathematical models and equip you with the skills to apply these tools effectively in your daily practice. By adding these capabilities to your toolkit, you'll gain a critical asset for advancing your career as a sports scientist.
 
@@ -44,7 +44,7 @@ The entire course spans 18 academic hours, with the content divided into distinc
  
 🧑‍🏫 : frontal class  |  💻 : hands-on  |  ⌚: Expected duration
 
-1. 🧑‍🏫 **What is mathematical modelling?** ⌚ 45-60’
+1. 🧑‍🏫 **What is mathematical modelling?** ⌚ 45-60'
     - Overview of the definition of model
     - Simple examples and applications
         - HRmax versus age
@@ -62,7 +62,7 @@ The entire course spans 18 academic hours, with the content divided into distinc
     - Static versus dynamic models
     - Black-box versus analytical versus statistical versus first-principles (and everything in between)
 
-2. 🧑‍🏫 **The process of creating a model** ⌚ 45-60’
+2. 🧑‍🏫 **The process of creating a model** ⌚ 45-60'
     - Calibration versus validation (train/test)
     - Training versus test dataset
     - Overfitting
@@ -76,7 +76,7 @@ The entire course spans 18 academic hours, with the content divided into distinc
     - Sensitivity analysis
     - Trade-off between accuracy, complexity, flexibility, and physical/physiological meaning
 
-3. 🧑‍🏫 **Static models** ⌚ 35-45’
+3. 🧑‍🏫 **Static models** ⌚ 35-45'
     - Linear versus non-linear models
     - Polynomials (examples: leg-extension)
     - Exponential (example: lactate production and clearance)
@@ -87,7 +87,7 @@ The entire course spans 18 academic hours, with the content divided into distinc
     - Correlation coefficient
     - Variance explained
 
-4. 🧑‍🏫 **Dynamic models** ⌚ 45-60’
+4. 🧑‍🏫 **Dynamic models** ⌚ 45-60'
     - First-order linear differential equations
         - Examples (bird-view)
         - Oxygen consumption response (will have a dedicated class)
@@ -99,7 +99,7 @@ The entire course spans 18 academic hours, with the content divided into distinc
         - Locomotion (will have a dedicated class)
         - Mass-spring-damper system (will have a dedicated class)
 
-5. 🧑‍🏫 **AI principles (required: what is mathematical modelling?)** ⌚ 45-60’
+5. 🧑‍🏫 **AI principles (required: what is mathematical modelling?)** ⌚ 45-60'
     - Examples
     - Basic principles behind neural networks
     - Neural network for time series
@@ -109,7 +109,7 @@ The entire course spans 18 academic hours, with the content divided into distinc
 
 ## Examples and Real-World Applications (Excel or Google Sheet spreadsheets)
 
-### 🧑‍🏫 **Tools**: ⌚ 10-15’
+### 🧑‍🏫 **Tools**: ⌚ 10-15'
 - Why Excel
 - The Excel spreadsheet
 - The Excel trendline functionality (required: Possible misunderstanding: association versus linear regression)
@@ -117,30 +117,30 @@ The entire course spans 18 academic hours, with the content divided into distinc
 - The Google Sheet spreadsheet
 - The Google Sheet solver add-on
 
-### 💻 **Leg extension (required: non-linear models)** ⌚ 20-25’
+### 💻 **Leg extension (required: non-linear models)** ⌚ 20-25'
 - Overview
 - Non-linear static model for optimal force/torque and knee angle 
 - Similarities with the cadence/power relationship in cycling
 
-### 💻 **Bi-exponential model for lactate production and clearance (required: non-linear models)** ⌚ 20-30’
+### 💻 **Bi-exponential model for lactate production and clearance (required: non-linear models)** ⌚ 20-30'
 - Overview
 - Non-linear models (exponential) for the components of lactate metabolism
 - The all-out test
 
-### 💻 **Bannister model (required: first order differential equation)** ⌚ 20-30’
+### 💻 **Bannister model (required: first order differential equation)** ⌚ 20-30'
 - Overview
 - First order differential equations for CTL and ATL 
 
-### 💻 **Anaerobic power/speed reserve (required: non-linear models)** ⌚ 15-20’
+### 💻 **Anaerobic power/speed reserve (required: non-linear models)** ⌚ 15-20'
 - Overview
 - Fitting the anaerobic power/speed reserve model
 
-### 💻 **Critical power** ⌚ 35-45’
+### 💻 **Critical power** ⌚ 35-45'
 - Overview
 - The static nature of critical power (required: non-linear models)
-- The dynamic nature of the W’ (required: first-order differential equation)
+- The dynamic nature of the W' (required: first-order differential equation)
 
-### 💻 **Oxygen consumption (required: first-order differential equation)** ⌚ 45-60’
+### 💻 **Oxygen consumption (required: first-order differential equation)** ⌚ 45-60'
 - Overview
 - Static model for oxygen consumption (required: static models)
 - Dynamic model for oxygen consumption
@@ -149,13 +149,13 @@ The entire course spans 18 academic hours, with the content divided into distinc
 - Ramp response
 - HIIT training
 
-### 💻 **Locomotion in endurance sports (cycling and XC-ski examples) (required: second-order differential equation)** ⌚ 45-60’
+### 💻 **Locomotion in endurance sports (cycling and XC-ski examples) (required: second-order differential equation)** ⌚ 45-60'
 - Overview
 - Writing the equations (e.g. based on power for cycling, or based on speed for XC-ski)
 - Integrating the equations
 - Sensitivity analysis
 
-### 💻 **MTB suspension (required: second-order differential equation)** ⌚ 45-60’
+### 💻 **MTB suspension (required: second-order differential equation)** ⌚ 45-60'
 - Overview
 - Writing the equations
 - Integrating the equations

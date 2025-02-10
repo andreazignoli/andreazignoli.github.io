@@ -49,4 +49,4 @@ I'm taking part in the growth of Athletica.ai, an AI-driven platform that follow
 
 In the pursuit of an impossible academic career, I love writing controversial research papers that take eight rejections to get published. I challenge the status quo with modeling ideas that require a shift in thinking about human body biomechanics and physiology.
 
-I help the community by sitting on the editorial board of Sports Engineering, where I am a proud Associate Editor. I act as a reviewer for several top-50 journals in sports science, handling at least eight papers per year. I quite enjoy exchanging ideas with people in academia and with eager young minds. I'm always ready to jump on a call with someone who'd love to exchange ideas.
+I help the community by sitting on the editorial board of Sports Engineering, where I am a proud Associate Editor. I act as a reviewer for several top-50 journals in sports science, handling at least eight papers per year. I quite enjoy exchanging ideas with people in academia and with eager young minds. 

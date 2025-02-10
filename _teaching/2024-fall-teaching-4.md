@@ -16,8 +16,6 @@ from Sep 30th, 2024 to Jan 17th, 2025, Rovereto, Trento, Italy
 **Instructor**: Andrea Zignoli  
 **Mail to**: [andrea.zignoli@unitn.it](mailto:andrea.zignoli@unitn.it)
 
----
-
 ## Overview of the course
 
 Models are essential tools for understanding and interpreting the world around us. We rely on models in every aspect of life, and sports is no exception.
@@ -30,13 +28,9 @@ Given the immense value of modelling in sports science, I believe that you can g
 
 I hope this course will enhance your understanding of mathematical models and equip you with the skills to apply these tools effectively in your daily practice. By adding these capabilities to your toolkit, you'll gain a critical asset for advancing your career as a sports scientist.
 
----
-
 ## Learning Goals
 
 By the end of this course, you will have developed a comprehensive understanding of the fundamental principles and practical applications of mathematical models in sports science. You will be able to define and construct models to describe various aspects of sports performance, from biomechanics to physiological responses. You will learn how to differentiate between linear and non-linear models, as well as static and dynamic models, applying these concepts to real-world scenarios such as oxygen consumption, critical power, and lactate metabolism. Additionally, you will be able to critically assess the accuracy and relevance of different models, perform sensitivity analyses, and balance the trade-offs between model complexity and practical functionality. Ultimately, you will be equipped with the skills to effectively use modelling as a tool for hypothesis formulation, data interpretation, and performance optimization in the field of sports science.
-
----
 
 ## Modules
 
@@ -104,8 +98,6 @@ The entire course spans 18 academic hours, with the content divided into distinc
     - Basic principles behind neural networks
     - Neural network for time series
     - Supervised learning versus unsupervised learning
-
----
 
 ## Examples and Real-World Applications (Excel or Google Sheet spreadsheets)
 

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "CV 📄"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,99 +9,94 @@ redirect_from:
 
 {% include base_path %}
 
-You can read a more extended version of this CV at this [Overleaf link](https://www.overleaf.com/read/myfwfsnndgzw).
+You can read a more extended version of this CV at this [Overleaf link](https://www.overleaf.com/read/myfwfsnndgzw). 🔗
 
-Education
-======
+## 🎯 Current Positions  
 
-* B.S. in Industrial Engineering, University of Trento, Italy, 2009
-* M.S. in Mechatronics Engineering, University of Trento, Italy, 2011
-* Ph.D. in Science of Physical Exercise and Human Movement, University of Verona, Italy, 2016
+- **Self-employed engineer**  
 
-Current positions
-======
+## 🎓 Education  
 
-* Data scientist at [Athletica](https://athletica.ai/)
+- 🏆 **Ph.D. in Science of Physical Exercise and Human Movement**, University of Verona, Italy, 2016  
+- ⚙️ **M.S. in Mechatronics Engineering**, University of Trento, Italy, 2011  
+- 🏭 **B.S. in Industrial Engineering**, University of Trento, Italy, 2009  
 
-Work experience
-======
+## 💼 Work Experience  
 
-* __Winter 2021- Ongoing__: Self-employed engineer
-  * Duties include: Modelling and data process
+- **📅 Spring 2024 - Ongoing**: Data Scientist at [Athletica.ai](https://athletica.ai/)  
+  - 🔍 Duties: Modelling - Feature design - Backend development  
 
-* __Spring 2021- Spring 2024__: Data scientist at [Supersapiens](https://www.supersapiens.com/en-EN/)
-  * Duties include: Modelling and data process
+- **📅 Spring 2021 - Spring 2024**: Data Scientist at [Supersapiens](https://www.supersapiens.com/en-EN/)  
+  - 📊 Duties: Data analysis - Data processing - Scientific writing  
 
-* __Fall 2017- Fall 2021__: Post-doctoral Researcher 
-  * University of Trento, Italy
-  * Duties included: Modelling multiple aspects of human sport peformance
-  * Supervisor: Professor F. Biral, PhD; Professor P. Bosetti, PhD
+- **📅 Fall 2017 - Fall 2021**: Post-doctoral Researcher  
+  - 🏛 University of Trento, Italy  
+  - 🎯 Focus: Modelling multiple aspects of human sport performance  
+  - 👨‍🏫 Supervisor: Professor F. Biral, PhD; Professor P. Bosetti, PhD  
 
-* __Fall 2016- Summer 2017__: Post-doctoral Researcher 
-  * University of Yokohama, Japan
-  * Duties included: Design of rehabilitation robots
-  * Supervisor: Professor T. Shimono, PhD
+- **📅 Fall 2016 - Summer 2017**: Post-doctoral Researcher  
+  - 🏛 University of Yokohama, Japan  
+  - 🤖 Focus: Design of rehabilitation robots  
+  - 👨‍🏫 Supervisor: Professor T. Shimono, PhD  
 
-* __Spring 2012- Summer 2016__: Research Assistant, Doctoral Fellowship 
-  * University of Verona, Italy
-  * Duties included: Data collection, data analysis and functional evaluation
-  * Supervisor: B. Pellegrini, PhD
+- **📅 Spring 2012 - Summer 2016**: Research Assistant, Doctoral Fellowship  
+  - 🏛 University of Verona, Italy  
+  - 📊 Focus: Data collection, data analysis, and functional evaluation  
+  - 👨‍🏫 Supervisor: B. Pellegrini, PhD  
 
-* __Spring 2011- Fall 2011__: Post-graduate research Assistant
-  * University of Trento, Italy
-  * Duties included: Modelling driver behaviour
-  * Supervisor: Professor F. Biral, PhD
-  
-Skills
-======
+- **📅 Spring 2011 - Fall 2011**: Post-graduate Research Assistant  
+  - 🏛 University of Trento, Italy  
+  - 🚗 Focus: Modelling driver behaviour  
+  - 👨‍🏫 Supervisor: Professor F. Biral, PhD  
 
-* __Data collection__
-  * Cardiopulmnary exercising test
-  * Electromyography
-  * Cycling power
-  * Motion capture
-  * Strain gauges
+## 🛠 Skills  
 
-* __Data processing__
-  * Basic: frequency-domain analysis
-  * Basic: image processing
-  * Advanced: time-domain analysis
+### 📡 Data Collection  
+- 🏃 Cardiopulmonary exercise testing  
+- 🔌 Electromyography  
+- 🚴 Cycling power analysis  
+- 🎥 Motion capture  
+- ⚖️ Strain gauges  
 
-* __Modelling__
-  * Basic: statistics and machine learnign 
-  * Intermediate: deep learning (LSTM, CNN with Tensorflow)
-  * Advanced: First principle models
+### 🖥 Data Processing  
+- 📈 Basic: Frequency-domain analysis  
+- 🖼 Basic: Image processing  
+- 📊 Advanced: Time-domain analysis  
 
-* __Deployment__
-  * Basic: Shiny
-  * Basic: Docker
-  * Basic: AWS
+### 🤖 Modelling  
+- 📉 Basic: Statistics and machine learning  
+- 🧠 Intermediate: Deep learning (LSTM, CNN with TensorFlow)  
+- 🔬 Advanced: First principle models  
 
-* __Software__
-  * Basic: R
-  * Basic/Intermediate: Maple
-  * Intermediate: Python
-  * Advanced: Matlab
+### 🚀 Deployment  
+- 🌐 Basic: Shiny  
+- 📦 Basic: Docker  
+- ☁️ Basic: AWS  
 
-Publications
-======
-  <ul>{% for post in site.publications %}
+### 💻 Software  
+- 🐍 Advanced: Python  
+- 📊 Intermediate: Matlab  
+- 🔢 Basic/Intermediate: R/RStudio  
+- 🔺 Basic/Intermediate: Maple  
+
+## 🏅 Service  
+
+- ✍️ Associate Editor at the [Sports Engineering](https://www.springer.com/journal/12283) journal  
+
+## 🎤 Teaching  
+
+<ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
+
+## 📚 Publications  
+
+<ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+## 🎙 Talks  
+
+<ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service
-======
-
-* Assistant Editor at the [Sports Engineering](https://www.springer.com/journal/12283) journal

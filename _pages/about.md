@@ -22,20 +22,18 @@ I love to work on:
 
 ---
 
-# 🧑🏻‍💻 TECH STACK
-
 <div style="margin: 30px 0; display: flex; justify-content: space-around; align-items: center;">
   <a href="https://www.python.org" target="_blank" class="icon-link">
-    <img src="../images/python_icon.svg" alt="Python Icon">
+    <img src="../images/python_icon.png" alt="Python Icon">
   </a>
   <a href="https://flask.palletsprojects.com" target="_blank" class="icon-link">
-    <img src="../images/flask_icon.svg" alt="Flask Icon">
+    <img src="../images/flask_icon.png" alt="Flask Icon">
   </a>
   <a href="https://www.docker.com" target="_blank" class="icon-link">
-    <img src="../images/docker_icon.svg" alt="Docker Icon">
+    <img src="../images/docker_icon.png" alt="Docker Icon">
   </a>
   <a href="https://www.r-project.org" target="_blank" class="icon-link">
-    <img src="../images/R_icon.svg" alt="R Icon">
+    <img src="../images/R_icon.png" alt="R Icon">
   </a>
 </div>
 

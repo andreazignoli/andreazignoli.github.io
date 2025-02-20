@@ -22,34 +22,6 @@ I love to work on:
 
 ---
 
-<div style="margin: 30px 0; display: flex; justify-content: space-around; align-items: center;">
-  <a href="https://www.python.org" target="_blank" class="icon-link">
-    <img src="../images/python_icon.png" alt="Python Icon">
-  </a>
-  <a href="https://flask.palletsprojects.com" target="_blank" class="icon-link">
-    <img src="../images/flask_icon.png" alt="Flask Icon">
-  </a>
-  <a href="https://www.docker.com" target="_blank" class="icon-link">
-    <img src="../images/docker_icon.png" alt="Docker Icon">
-  </a>
-  <a href="https://www.r-project.org" target="_blank" class="icon-link">
-    <img src="../images/R_icon.png" alt="R Icon">
-  </a>
-</div>
-
-<style>
-.icon-link img {
-  width: 50px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.icon-link img:hover {
-  transform: scale(1.2); /* Slightly increases size on hover */
-}
-</style>
-
---- 
-
 # 🔍 WHY
 
 I'm equally interested in each phase of modeling: conceptualization and formalization, data collection and processing, model development, and model deployment. I always value models that can teach us more in return. I love adding intelligence to the process. Ironically, more intelligence usually means less technology. And that’s the way it should be: sensors come and go, but learning is forever.

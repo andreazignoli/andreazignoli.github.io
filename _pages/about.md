@@ -40,7 +40,6 @@ I love to work on:
 <style>
 .icon-link img {
   width: 50px;
-  height: 50px;
   transition: transform 0.2s ease-in-out;
 }
 

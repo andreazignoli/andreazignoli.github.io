@@ -12,22 +12,24 @@ redirect_from:
 
 I love to work on:
 
-🫁 AI applied to cardiopulmonary exercise test data
+🫁 AI applied to cardiopulmonary exercise test data  
 
-🚴 Cornering strategies in road cycling
+🚴 Cornering strategies in road cycling  
 
-🤖 AI training prescription & assessment
+🤖 AI training prescription & assessment  
 
-📈 Continuous Glucose Monitoring (CGM) data
+📈 Continuous Glucose Monitoring (CGM) data  
 
 ---
 
-<div style="text-align: left;">
-  <img src="../images/python_icon.svg" alt="Icon 1" width="50" height="50">
-  <img src="../images/flask_icon.svg" alt="Icon 2" width="50" height="50">
-  <img src="../images/docker_icon.svg" alt="Icon 3" width="50" height="50">
-  <img src="../images/R_icon.svg" alt="Icon 4" width="50" height="50">
+<div style="margin: 30px 0; display: flex; justify-content: space-around; align-items: center;">
+  <img src="../images/python_icon.svg" alt="Python Icon" width="50" height="50">
+  <img src="../images/flask_icon.svg" alt="Flask Icon" width="50" height="50">
+  <img src="../images/docker_icon.svg" alt="Docker Icon" width="50" height="50">
+  <img src="../images/R_icon.svg" alt="R Icon" width="50" height="50">
 </div>
+
+---
 
 # 🔍 WHY
 

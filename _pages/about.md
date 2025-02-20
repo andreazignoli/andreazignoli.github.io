@@ -23,10 +23,18 @@ I love to work on:
 ---
 
 <div style="margin: 30px 0; display: flex; justify-content: space-around; align-items: center;">
-  <img src="../images/python_icon.svg" alt="Python Icon" width="50" height="50">
-  <img src="../images/flask_icon.svg" alt="Flask Icon" width="50" height="50">
-  <img src="../images/docker_icon.svg" alt="Docker Icon" width="50" height="50">
-  <img src="../images/R_icon.svg" alt="R Icon" width="50" height="50">
+  <a href="https://www.python.org" target="_blank">
+    <img src="../images/python_icon.svg" alt="Python Icon" width="50" height="50">
+  </a>
+  <a href="https://flask.palletsprojects.com" target="_blank">
+    <img src="../images/flask_icon.svg" alt="Flask Icon" width="50" height="50">
+  </a>
+  <a href="https://www.docker.com" target="_blank">
+    <img src="../images/docker_icon.svg" alt="Docker Icon" width="50" height="50">
+  </a>
+  <a href="https://www.r-project.org" target="_blank">
+    <img src="../images/R_icon.svg" alt="R Icon" width="50" height="50">
+  </a>
 </div>
 
 ---

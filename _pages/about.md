@@ -23,21 +23,43 @@ I love to work on:
 ---
 
 <div style="margin: 30px 0; display: flex; justify-content: space-around; align-items: center;">
-  <a href="https://www.python.org" target="_blank">
-    <img src="../images/python_icon.svg" alt="Python Icon" width="50" height="50">
+  <a href="https://www.python.org" target="_blank" class="icon-link">
+    <img src="../images/python_icon.svg" alt="Python Icon">
   </a>
-  <a href="https://flask.palletsprojects.com" target="_blank">
-    <img src="../images/flask_icon.svg" alt="Flask Icon" width="50" height="50">
+  <a href="https://flask.palletsprojects.com" target="_blank" class="icon-link">
+    <img src="../images/flask_icon.svg" alt="Flask Icon">
   </a>
-  <a href="https://www.docker.com" target="_blank">
-    <img src="../images/docker_icon.svg" alt="Docker Icon" width="50" height="50">
+  <a href="https://www.docker.com" target="_blank" class="icon-link">
+    <img src="../images/docker_icon.svg" alt="Docker Icon">
   </a>
-  <a href="https://www.r-project.org" target="_blank">
-    <img src="../images/R_icon.svg" alt="R Icon" width="50" height="50">
+  <a href="https://www.r-project.org" target="_blank" class="icon-link">
+    <img src="../images/R_icon.svg" alt="R Icon">
   </a>
 </div>
 
+<style>
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px; /* Adjust size */
+  height: 70px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.icon-link img {
+  width: 50px; /* Adjust size */
+  height: 50px;
+}
+
+.icon-link:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle hover effect */
+}
+</style>
+
 ---
+
 
 # 🔍 WHY
 

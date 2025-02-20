@@ -22,6 +22,8 @@ I love to work on:
 
 ---
 
+# 🧑🏻‍💻 TECH STACK
+
 <div style="margin: 30px 0; display: flex; justify-content: space-around; align-items: center;">
   <a href="https://www.python.org" target="_blank" class="icon-link">
     <img src="../images/python_icon.svg" alt="Python Icon">
@@ -38,28 +40,18 @@ I love to work on:
 </div>
 
 <style>
-.icon-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px; /* Adjust size */
-  height: 70px;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-
 .icon-link img {
-  width: 50px; /* Adjust size */
+  width: 50px;
   height: 50px;
+  transition: transform 0.2s ease-in-out;
 }
 
-.icon-link:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Subtle hover effect */
+.icon-link img:hover {
+  transform: scale(1.2); /* Slightly increases size on hover */
 }
 </style>
 
----
-
+--- 
 
 # 🔍 WHY
 

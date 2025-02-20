@@ -22,6 +22,13 @@ I love to work on:
 
 ---
 
+<div style="text-align: left;">
+  <img src="../images/python_icon.svg" alt="Icon 1" width="50" height="50">
+  <img src="../images/flask_icon.svg" alt="Icon 2" width="50" height="50">
+  <img src="../images/docker_icon.svg" alt="Icon 3" width="50" height="50">
+  <img src="../images/R_icon.svg" alt="Icon 4" width="50" height="50">
+</div>
+
 # 🔍 WHY
 
 I'm equally interested in each phase of modeling: conceptualization and formalization, data collection and processing, model development, and model deployment. I always value models that can teach us more in return. I love adding intelligence to the process. Ironically, more intelligence usually means less technology. And that’s the way it should be: sensors come and go, but learning is forever.

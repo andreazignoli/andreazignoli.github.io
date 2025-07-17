@@ -18,6 +18,4 @@ A multi-step methodology, including Retrieval-Augmented Generation (RAG) pipelin
 
 Ultimately, this work emphasizes the critical need for sport scientists and practitioners to develop a nuanced understanding of AI capabilities and limitations, advocating for responsible and sustainable integration of LLMs to augment human expertise rather than replace it.
 
-For a comprehensive review of the methodology and its implications, refer to the full paper:
-
-https://sportperfsci.com/wp-content/uploads/2025/05/SPSR256_Zignoli.pdf 
+For a comprehensive review of the methodology and its implications, refer to the [full paper](https://sportperfsci.com/wp-content/uploads/2025/05/SPSR256_Zignoli.pdf).  

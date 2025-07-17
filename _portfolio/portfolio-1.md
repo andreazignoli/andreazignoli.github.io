@@ -18,6 +18,4 @@ Our methodology leverages Retrieval-Augmented Generation (RAG-AI) models to proc
 
 The presented framework emphasizes the synergistic relationship between AI-driven analytical capabilities and human expertise in exercise physiology and coaching, recognizing the latter's role in interpreting subjective inputs and navigating complex, ambiguous scenarios.
 
-For a comprehensive review of the methodology and its implications, refer to the full paper:
-
-https://martin-buchheit.net/wp-content/uploads/2024/11/SPSR241_Zignoli.pdf
+For a comprehensive review of the methodology and its implications, refer to the [full paper](https://martin-buchheit.net/wp-content/uploads/2024/11/SPSR241_Zignoli.pdf).

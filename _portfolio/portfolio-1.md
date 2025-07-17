@@ -1,21 +1,25 @@
 ---
-title: "AI-Assisted HRV Monitoring: Enhancing Training Load Response and Decision-Making"
-excerpt: "This work introduces an innovative framework within Sports Science 3.0 for enhancing individualized training optimization through the integration of Artificial Intelligence (AI) with physiological metrics. <br/><img src='/images/HRV_guided_chord.jpeg' style='width: 50%;'>"
+title: "Signatures of Fatigue: Transformer-Based Sentiment Analysis for Internal Load Monitoring"
+excerpt: "This work explores novel applications of Artificial Intelligence, specifically transformer-based models for objective assessment of athletes' internal load and emotional states. <br/><img src='/images/semantic_analysis.png' style='width: 50%;'>"
 collection: portfolio
 ---
 
 <div style="margin-top: 20px;"></div>
 
-<br/><img src='/images/HRV_guided_chord.jpeg' style='display: block; margin-left: auto; margin-right: auto; width: 50%;'>
+ <br/><img src='/images/semantic_analysis.png' style='display: block; margin-left: auto; margin-right: auto; width: 50%;'>
 
-# AI-Driven Physiological Monitoring for Optimized Training Load
+# Signatures of Fatigue: Transformer-Based Sentiment Analysis for Internal Load Monitoring
 
-This work introduces an innovative framework within Sports Science 3.0 for enhancing individualized training optimization through the integration of Artificial Intelligence (AI) with physiological metrics.
+This work, aligned with the Sports Science 3.0 initiative, explores novel applications of Artificial Intelligence, specifically transformer-based models and Large Language Models (LLMs), for objective assessment of athletes' internal load and emotional states.
 
-The focus is on the practical application and advanced interpretation of Heart Rate Variability (HRV) and Resting Heart Rate (RHR). These non-invasive measures serve as key indicators of an athlete's autonomic nervous system response to training stimuli and subsequent recovery.
+The study presents the first large-scale application of sentiment and semantic analysis to self-reported training and racing comments from endurance athletes. It addresses the challenge of processing extensive free-text logs, which often contain crucial, unfiltered insights into an athlete's response to training and competition that traditional metrics may miss.
 
-Our methodology leverages Retrieval-Augmented Generation (RAG-AI) models to process and synthesize domain-specific knowledge, enabling a more nuanced understanding and contextualization of individual physiological data, including 60-day reference values and 7-day rolling averages. This approach facilitates dynamic adjustments to training loads, aiming to enhance performance while mitigating the risk of maladaptation or injury.
+Our methodology leverages a two-step natural language processing pipeline to extract emotional tone (e.g., joy, sadness) and salient keywords from athlete comments. Predictive modeling using XGBoost identified subjective "feel" as the strongest predictor of emotional state, followed by age. Key findings include:
 
-The presented framework emphasizes the synergistic relationship between AI-driven analytical capabilities and human expertise in exercise physiology and coaching, recognizing the latter's role in interpreting subjective inputs and navigating complex, ambiguous scenarios.
+Meaningful associations between emotional tone and factors such as training modality (e.g., running elicited more "joy" than rowing), age group (younger athletes reported more "joy" and slightly higher "sadness"), and experience level (beginner athletes reported less "joy").
 
-For a comprehensive review of the methodology and its implications, refer to the [full paper](https://martin-buchheit.net/wp-content/uploads/2024/11/SPSR241_Zignoli.pdf).
+No significant emotional differences were observed across days of the week or gender in this dataset.
+
+A case study demonstrated how fluctuations in "sadness" and "joy" scores, derived from text comments, correlated with a significant real-life event (an injury impacting a race goal).
+
+This research highlights the potential of semantic analysis, when used alongside established internal load monitoring tools, to provide complementary information for a comprehensive understanding of an athlete's acute and longitudinal training responses and psychological readiness. It underscores the importance of considering both demographic and behavioral context for personalized athlete management strategies, while emphasizing transparency and user agency in data practices.

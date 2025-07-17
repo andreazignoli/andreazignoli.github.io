@@ -1,6 +1,6 @@
 ---
 title: "AI-Assisted HRV Monitoring: Enhancing Training Load Response and Decision-Making"
-excerpt: "<br/><img src='/images/HRV_guided_chord.jpeg' style='width: 50%;'>"
+excerpt: "This work introduces an innovative framework within Sports Science 3.0 for enhancing individualized training optimization through the integration of Artificial Intelligence (AI) with physiological metrics. <br/><img src='/images/HRV_guided_chord.jpeg' style='width: 50%;'>"
 collection: portfolio
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "AI Coaching Computational Paths of Knowledge"
-excerpt: "<br/><img src='/images/tweet_computation_paths_of_knowledge.png' style='width: 50%;'>"
+excerpt: "This work explores the transformative impact of Large Language Models (LLMs) on AI-driven coaching, positioning them as a fundamental shift in how knowledge is structured and utilized within sports science. <br/><img src='/images/tweet_computation_paths_of_knowledge.png' style='width: 50%;'>"
 collection: portfolio
 ---
 

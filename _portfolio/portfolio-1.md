@@ -8,8 +8,6 @@ collection: portfolio
 
  <br/><img src='/images/semantic_analysis.png' style='display: block; margin-left: auto; margin-right: auto; width: 80%;'>
 
-# Signatures of Fatigue: Transformer-Based Sentiment Analysis for Internal Load Monitoring
-
 This work explores novel applications of Artificial Intelligence, specifically transformer-based models, for objective assessment of athletes' internal load and emotional states.
 
 The study presents the first large-scale application of sentiment and semantic analysis to self-reported training and racing comments from endurance athletes. It addresses the challenge of processing extensive free-text logs, which often contain crucial, unfiltered insights into an athlete's response to training and competition that traditional metrics may miss.

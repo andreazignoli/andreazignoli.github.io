@@ -8,8 +8,6 @@ collection: portfolio
 
  <br/><img src='/images/tweet_computation_paths_of_knowledge.png' style='display: block; margin-left: auto; margin-right: auto; width: 50%;'>
 
-# The Computational Paths of Knowledge in AI Coaching
-
 This work explores the transformative impact of Large Language Models (LLMs) on AI-driven coaching, positioning them as a fundamental shift in how knowledge is structured and utilized within sports science.
 
 The paper delves into how LLMs can simulate aspects of human reasoning by navigating complex semantic spaces derived from textual data, thereby extending AI's role beyond simple query-response systems. It proposes that LLMs are capable of representing the underlying structure of the world as described through language.

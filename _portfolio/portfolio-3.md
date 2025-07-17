@@ -8,8 +8,6 @@ collection: portfolio
 
 <br/><img src='/images/HRV_guided_chord.jpeg' style='display: block; margin-left: auto; margin-right: auto; width: 50%;'>
 
-# AI-Driven Physiological Monitoring for Optimized Training Load
-
 This work introduces an innovative framework within Sports Science 3.0 for enhancing individualized training optimization through the integration of Artificial Intelligence (AI) with physiological metrics.
 
 The focus is on the practical application and advanced interpretation of Heart Rate Variability (HRV) and Resting Heart Rate (RHR). These non-invasive measures serve as key indicators of an athlete's autonomic nervous system response to training stimuli and subsequent recovery.

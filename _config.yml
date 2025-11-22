@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Personal website"
 title_separator          : "-"
 name                     : &name "Andrea Zignoli"
-description              : &description "M. Eng., PhD"
+description              : &description "AI Sport Tech Consultant"
 url                      : https://andreazignoli.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "andreazignoli/andreazignoli.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Andrea Zignoli"
   avatar           : "profile_pic.jpg"
-  bio              : "I create mathematical models for sport performance analysis"
+  bio              : "AI Sport Tech Consultant | I help startups build and deploy performance models that drive subscriptions and enhance UX"
   location         : "Verona, Italy"
   employer         :
   pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=andrea+zignoli"

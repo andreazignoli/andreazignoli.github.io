@@ -1,33 +1,37 @@
 {
-  "name": "minimal-mistakes",
-  "version": "3.4.2",
-  "description": "Minimal Mistakes Jekyll theme npm build scripts",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+  "name": "andreazignoli-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
   },
-  "keywords": [
-    "jekyll",
-    "theme",
-    "minimal"
-  ],
-  "author": "Michael Rose",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
-  },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
-  "engines": {
-    "node": ">= 0.10.0"
+  "dependencies": {
+    "@radix-ui/react-separator": "^1.1.0",
+    "@radix-ui/react-tabs": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^10.18.0",
+    "geist": "^1.3.0",
+    "lucide-react": "^0.407.0",
+    "next": "14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.4.0",
+    "ts-interface-checker": "^1.0.2"
   },
   "devDependencies": {
-    "npm-run-all": "^1.7.0",
-    "onchange": "^2.2.0",
-    "uglify-js": "^2.6.1"
-  },
-  "scripts": {
-    "uglify": "uglifyjs assets/js/vendor/jquery/jquery-1.12.4.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/plugins/stickyfill.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify"
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.35",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3"
   }
 }

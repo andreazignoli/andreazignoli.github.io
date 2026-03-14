@@ -34,10 +34,11 @@ export interface BlogPost {
   content?: string
 }
 
-export interface OrcidWork {
+export interface Publication {
   title: string
   year: string
   journal?: string
   doi?: string
   url?: string
+  citations?: number
 }

@@ -1,41 +1,36 @@
 import Link from 'next/link'
 import { SectionWrapper } from '@/components/shared/section-wrapper'
 import { GradientText } from '@/components/shared/gradient-text'
-import type { OrcidWork } from '@/types'
+import type { Publication } from '@/types'
 
-async function getRecentPublications(): Promise<OrcidWork[]> {
+async function getRecentPublications(): Promise<Publication[]> {
   try {
     const res = await fetch(
-      'https://pub.orcid.org/v3.0/0000-0003-1315-5573/works',
+      'https://api.openalex.org/works' +
+        '?filter=author.orcid:0000-0003-1315-5573' +
+        '&per_page=5&sort=publication_date:desc' +
+        '&select=title,publication_year,primary_location,doi',
       {
-        headers: { Accept: 'application/json' },
+        headers: { 'User-Agent': 'andreazignoli.github.io (andrea.zignoli@unitn.it)' },
         next: { revalidate: 86400 },
       },
     )
     if (!res.ok) return []
     const data = await res.json()
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const groups: any[] = data.group ?? []
-    return groups
-      .map((group) => {
-        const summary = group['work-summary']?.[0]
-        if (!summary) return null
-        const title = summary.title?.title?.value ?? 'Untitled'
-        const year = summary['publication-date']?.year?.value ?? ''
-        const journal = summary['journal-title']?.value ?? ''
-        const externalIds: { 'external-id-type': string; 'external-id-value': string }[] =
-          summary['external-ids']?.['external-id'] ?? []
-        const doi = externalIds.find((e) => e['external-id-type'] === 'doi')?.['external-id-value']
-        return { title, year, journal, doi: doi ? `https://doi.org/${doi}` : undefined }
-      })
-      .filter(Boolean)
-      .sort((a, b) => Number(b!.year) - Number(a!.year))
-      .slice(0, 5) as OrcidWork[]
+    return data.results.map((w: any) => ({
+      title: w.title ?? 'Untitled',
+      year: String(w.publication_year ?? ''),
+      journal: w.primary_location?.source?.display_name ?? '',
+      url: w.doi
+        ? `https://doi.org/${w.doi.replace('https://doi.org/', '')}`
+        : `https://scholar.google.com/scholar?q=${encodeURIComponent(w.title ?? '')}`,
+    }))
   } catch {
     return []
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function FeaturedPublications() {
   const publications = await getRecentPublications()
 
@@ -77,9 +72,9 @@ export async function FeaturedPublications() {
                       {pub.year}
                     </span>
                     <div className="flex-1 min-w-0">
-                      {pub.doi ? (
+                      {pub.url ? (
                         <a
-                          href={pub.doi}
+                          href={pub.url}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-white/80 text-sm leading-relaxed hover:text-accent transition-colors line-clamp-2"

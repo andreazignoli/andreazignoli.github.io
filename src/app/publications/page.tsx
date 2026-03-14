@@ -17,7 +17,7 @@ async function getAllPublications(): Promise<Publication[]> {
     while (cursor) {
       const url =
         `https://api.openalex.org/works` +
-        `?filter=author.orcid:${ORCID}` +
+        `?filter=author.orcid:${ORCID},type:article|book-chapter` +
         `&per_page=200` +
         `&cursor=${cursor}` +
         `&sort=publication_date:desc` +

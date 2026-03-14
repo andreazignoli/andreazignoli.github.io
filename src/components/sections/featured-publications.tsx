@@ -7,7 +7,7 @@ async function getRecentPublications(): Promise<Publication[]> {
   try {
     const res = await fetch(
       'https://api.openalex.org/works' +
-        '?filter=author.orcid:0000-0003-1315-5573' +
+        '?filter=author.orcid:0000-0003-1315-5573,type:article|book-chapter' +
         '&per_page=5&sort=publication_date:desc' +
         '&select=title,publication_year,primary_location,doi',
       {

@@ -51,18 +51,14 @@ export function Hero() {
 
           {/* Profile photo */}
           <div className="hidden md:block">
-            <div className="relative w-56 h-56 rounded-2xl overflow-hidden glass p-0.5">
-              <div className="relative w-full h-full rounded-2xl overflow-hidden">
-                <Image
-                  src="/images/profile_pic.jpg"
-                  alt="Andrea Zignoli"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-              {/* Subtle gradient overlay */}
-              <div className="absolute inset-0 rounded-2xl ring-1 ring-white/10 pointer-events-none" />
+            <div className="relative w-56 h-56">
+              <Image
+                src="/images/profile_pic.jpg"
+                alt="Andrea Zignoli"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>

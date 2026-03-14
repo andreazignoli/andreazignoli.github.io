@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { GradientText } from '@/components/shared/gradient-text'
+import { BackgroundRippleEffect } from '@/components/ui/background-ripple-effect'
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center section-padding pt-32">
-      <div className="container-max w-full">
+    <section className="relative min-h-screen flex items-center section-padding pt-32 overflow-hidden">
+      <BackgroundRippleEffect />
+      <div className="relative z-10 container-max w-full">
         <div className="grid md:grid-cols-[1fr_auto] gap-12 items-center">
           {/* Text */}
           <div className="space-y-6">

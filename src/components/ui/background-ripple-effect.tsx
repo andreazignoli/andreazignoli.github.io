@@ -4,7 +4,7 @@ import React, { useMemo, useState } from 'react'
 import { cn } from '@/lib/utils'
 
 export const BackgroundRippleEffect = ({
-  rows = 8,
+  rows = 18,
   cols = 27,
   cellSize = 56,
 }: {
@@ -55,11 +55,11 @@ const DivGrid = ({ rows, cols, cellSize, clickedCell, onCellClick }: DivGridProp
         gridTemplateRows: `repeat(${rows}, ${cellSize}px)`,
         width: cols * cellSize,
         height: rows * cellSize,
-        // Fade out toward the bottom and sides
+        // Visible across full width, fades to transparent toward bottom
         maskImage:
-          'radial-gradient(ellipse 90% 60% at 50% 0%, black 30%, transparent 100%)',
+          'linear-gradient(to bottom, black 50%, transparent 100%)',
         WebkitMaskImage:
-          'radial-gradient(ellipse 90% 60% at 50% 0%, black 30%, transparent 100%)',
+          'linear-gradient(to bottom, black 50%, transparent 100%)',
       }}
     >
       {cells.map((idx) => {

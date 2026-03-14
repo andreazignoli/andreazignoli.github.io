@@ -51,7 +51,7 @@ export function Hero() {
 
           {/* Profile photo */}
           <div className="hidden md:block">
-            <div className="relative w-56 h-56">
+            <div className="relative w-56 h-56 rounded-full overflow-hidden">
               <Image
                 src="/images/profile_pic.jpg"
                 alt="Andrea Zignoli"

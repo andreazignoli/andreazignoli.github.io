@@ -3,12 +3,23 @@ import { SectionWrapper } from '@/components/shared/section-wrapper'
 import { GradientText } from '@/components/shared/gradient-text'
 import type { Publication } from '@/types'
 
+const EXCLUDED_SOURCES = new Set([
+  'ssrn electronic journal',
+  'biorxiv',
+  'medrxiv',
+  'arxiv',
+  'research square',
+  'chemrxiv',
+  'preprints',
+])
+
 async function getRecentPublications(): Promise<Publication[]> {
   try {
+    // Fetch 15 so we still get 5 after filtering out preprint servers
     const res = await fetch(
       'https://api.openalex.org/works' +
         '?filter=author.orcid:0000-0003-1315-5573,type:article|book-chapter' +
-        '&per_page=5&sort=publication_date:desc' +
+        '&per_page=15&sort=publication_date:desc' +
         '&select=title,publication_year,primary_location,doi',
       {
         headers: { 'User-Agent': 'andreazignoli.github.io (andrea.zignoli@unitn.it)' },
@@ -17,20 +28,22 @@ async function getRecentPublications(): Promise<Publication[]> {
     )
     if (!res.ok) return []
     const data = await res.json()
-    return data.results.map((w: any) => ({
-      title: w.title ?? 'Untitled',
-      year: String(w.publication_year ?? ''),
-      journal: w.primary_location?.source?.display_name ?? '',
-      url: w.doi
-        ? `https://doi.org/${w.doi.replace('https://doi.org/', '')}`
-        : `https://scholar.google.com/scholar?q=${encodeURIComponent(w.title ?? '')}`,
-    }))
+    return (data.results as any[])
+      .filter((w) => !EXCLUDED_SOURCES.has((w.primary_location?.source?.display_name ?? '').toLowerCase()))
+      .slice(0, 5)
+      .map((w) => ({
+        title: w.title ?? 'Untitled',
+        year: String(w.publication_year ?? ''),
+        journal: w.primary_location?.source?.display_name ?? '',
+        url: w.doi
+          ? `https://doi.org/${w.doi.replace('https://doi.org/', '')}`
+          : `https://scholar.google.com/scholar?q=${encodeURIComponent(w.title ?? '')}`,
+      }))
   } catch {
     return []
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function FeaturedPublications() {
   const publications = await getRecentPublications()
 

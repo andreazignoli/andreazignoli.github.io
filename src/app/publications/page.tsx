@@ -9,6 +9,17 @@ export const metadata: Metadata = {
 
 const ORCID = '0000-0003-1315-5573'
 
+// Preprint servers and non-peer-reviewed repositories to exclude
+const EXCLUDED_SOURCES = new Set([
+  'ssrn electronic journal',
+  'biorxiv',
+  'medrxiv',
+  'arxiv',
+  'research square',
+  'chemrxiv',
+  'preprints',
+])
+
 async function getAllPublications(): Promise<Publication[]> {
   const results: Publication[] = []
   let cursor = '*'
@@ -31,10 +42,12 @@ async function getAllPublications(): Promise<Publication[]> {
 
       const data = await res.json()
       for (const w of data.results) {
+        const source: string = w.primary_location?.source?.display_name ?? ''
+        if (EXCLUDED_SOURCES.has(source.toLowerCase())) continue
         results.push({
           title: w.title ?? 'Untitled',
           year: String(w.publication_year ?? ''),
-          journal: w.primary_location?.source?.display_name ?? '',
+          journal: source,
           doi: w.doi ? `https://doi.org/${w.doi.replace('https://doi.org/', '')}` : undefined,
           url: w.doi
             ? `https://doi.org/${w.doi.replace('https://doi.org/', '')}`

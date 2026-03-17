@@ -7,6 +7,7 @@ import { talks } from '@/content/talks'
 const typeColors: Record<string, string> = {
   'Training Science Podcast': 'text-accent',
   'Podcast': 'text-secondary',
+  'Video': 'text-red-400',
   'Talk': 'text-white/50',
   'Tutorial': 'text-white/50',
 }
@@ -57,7 +58,7 @@ export function FeaturedTalks() {
                     rel="noopener noreferrer"
                     className="text-accent text-xs font-mono hover:underline mt-auto"
                   >
-                    Listen →
+                    {talk.linkLabel ?? 'Listen'} →
                   </a>
                 )}
               </GlassCard>

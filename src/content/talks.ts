@@ -27,19 +27,21 @@ export const talks: Talk[] = [
   },
   {
     title: "Human-AI Balance in Coaching: Athletica's AI-Assisted HRV Monitoring",
-    type: 'Podcast',
+    type: 'Video',
     date: '2024-12-26',
     description:
-      'HRV and its role in optimising training readiness and recovery. As co-architect of Athletica\'s AI-assisted HRV monitoring, I explain how AI enhances HRV analysis while maintaining the importance of human expertise.',
-    link: 'https://athletica.ai/the-athletes-compass-podcast/human-ai-balance-in-coaching-a-look-into-athleticas-ai-assisted-hrv-monitoring/',
+      "HRV and its role in optimising training readiness and recovery. As co-architect of Athletica's AI-assisted HRV monitoring, I explain how AI enhances HRV analysis while maintaining the importance of human expertise.",
+    link: 'https://www.youtube.com/watch?v=b4m5-jHp-kQ',
+    linkLabel: 'Watch',
   },
   {
     title: 'From Lab to Athlete: Optimizing Training with Workout Reserve',
-    type: 'Podcast',
+    type: 'Video',
     date: '2024-10-17',
     description:
       'Development and application of Workout Reserve — an AI-driven tool that helps athletes measure their current effort against historical performances — with real-world applications in elite cycling and Ironman.',
-    link: 'https://athletica.ai/the-athletes-compass-podcast/from-lab-to-athlete-optimizing-training-with-workout-reserve/',
+    link: 'https://www.youtube.com/watch?v=xwxBGwRLgjI',
+    linkLabel: 'Watch',
   },
   {
     title: 'What AI-Powered Training Is & What It Is Not',

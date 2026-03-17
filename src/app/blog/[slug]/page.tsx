@@ -20,9 +20,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function BlogPostPage({ params }: Props) {
+const contentMap: Record<string, () => Promise<{ default: React.ComponentType }>> = {
+  'oxynet-collective-intelligence': () => import('@/content/post-content/oxynet-collective-intelligence'),
+  'bike-handling-road-cycling': () => import('@/content/post-content/bike-handling-road-cycling'),
+  'ai-cpet-data': () => import('@/content/post-content/ai-cpet-data'),
+  'eagles-sunflowers-cycling-trajectories': () => import('@/content/post-content/eagles-sunflowers-cycling-trajectories'),
+  'workout-reserve-maximal-mean-power': () => import('@/content/post-content/workout-reserve-maximal-mean-power'),
+}
+
+export default async function BlogPostPage({ params }: Props) {
   const post = posts.find((p) => p.slug === params.slug)
   if (!post) notFound()
+
+  let PostContent: React.ComponentType | null = null
+  if (post.hasContent && contentMap[post.slug]) {
+    const mod = await contentMap[post.slug]()
+    PostContent = mod.default
+  }
 
   return (
     <main className="min-h-screen section-padding pt-28">
@@ -49,54 +63,18 @@ export default function BlogPostPage({ params }: Props) {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-gradient-to-r from-accent/40 via-secondary/30 to-transparent mb-8" />
+        <div className="h-px bg-gradient-to-r from-accent/40 via-secondary/30 to-transparent mb-10" />
 
         {/* Content */}
-        {post.content ? (
-          <div className="prose-custom space-y-4 text-white/70 leading-relaxed">
-            {post.content.split('\n\n').map((para, i) => {
-              if (para.startsWith('## ')) {
-                return (
-                  <h2 key={i} className="text-white font-bold text-xl mt-8 mb-3">
-                    {para.slice(3)}
-                  </h2>
-                )
-              }
-              if (para.startsWith('**') && para.endsWith('**')) {
-                return (
-                  <p key={i} className="text-white font-semibold">
-                    {para.slice(2, -2)}
-                  </p>
-                )
-              }
-              // Render basic markdown links
-              const rendered = para.replace(
-                /\[([^\]]+)\]\(([^)]+)\)/g,
-                (_, text, href) =>
-                  `<a href="${href}" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">${text}</a>`,
-              ).replace(
-                /\*([^*]+)\*/g,
-                (_, text) => `<em class="text-white/80">${text}</em>`,
-              ).replace(
-                /\*\*([^*]+)\*\*/g,
-                (_, text) => `<strong class="text-white">${text}</strong>`,
-              )
-              return (
-                <p
-                  key={i}
-                  dangerouslySetInnerHTML={{ __html: rendered }}
-                  className="text-white/65 leading-relaxed"
-                />
-              )
-            })}
+        {PostContent && (
+          <div className="blog-content">
+            <PostContent />
           </div>
-        ) : (
-          <p className="text-white/50">No content available.</p>
         )}
 
         {/* External link */}
         {post.externalLink && (
-          <div className="mt-8 pt-6 border-t border-white/[0.06]">
+          <div className="mt-10 pt-6 border-t border-white/[0.06]">
             <a
               href={post.externalLink}
               target="_blank"
@@ -107,6 +85,16 @@ export default function BlogPostPage({ params }: Props) {
             </a>
           </div>
         )}
+
+        {/* Bottom nav */}
+        <div className="mt-12 pt-6 border-t border-white/[0.06]">
+          <Link
+            href="/blog"
+            className="text-white/35 hover:text-accent transition-colors text-sm font-mono"
+          >
+            ← All posts
+          </Link>
+        </div>
       </div>
     </main>
   )

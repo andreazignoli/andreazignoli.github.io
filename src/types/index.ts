@@ -1,11 +1,12 @@
 export interface Talk {
   title: string
-  type: 'Talk' | 'Tutorial' | 'Podcast' | 'Training Science Podcast'
+  type: 'Talk' | 'Tutorial' | 'Podcast' | 'Training Science Podcast' | 'Video'
   venue?: string
   date: string
   location?: string
   description: string
   link?: string
+  linkLabel?: string
 }
 
 export interface PortfolioItem {
@@ -23,6 +24,7 @@ export interface TeachingItem {
   date: string
   location: string
   description?: string
+  link?: string
 }
 
 export interface BlogPost {
@@ -31,7 +33,7 @@ export interface BlogPost {
   date: string
   excerpt: string
   externalLink?: string
-  content?: string
+  hasContent?: boolean
 }
 
 export interface Publication {

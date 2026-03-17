@@ -76,4 +76,83 @@ body {
   .container-max {
     @apply max-w-6xl mx-auto;
   }
+
+  /* Blog post prose styles */
+  .blog-content {
+    @apply text-white/70 leading-relaxed;
+  }
+  .blog-content h1 {
+    @apply text-2xl md:text-3xl font-bold text-white mt-10 mb-4 leading-tight;
+  }
+  .blog-content h2 {
+    @apply text-xl md:text-2xl font-bold text-white mt-10 mb-3 leading-tight;
+    border-left: 3px solid #00dc82;
+    padding-left: 0.75rem;
+  }
+  .blog-content h3 {
+    @apply text-lg font-semibold text-white/90 mt-6 mb-2;
+  }
+  .blog-content p {
+    @apply mb-4 leading-relaxed;
+  }
+  .blog-content a {
+    @apply text-accent hover:underline;
+  }
+  .blog-content strong {
+    @apply text-white font-semibold;
+  }
+  .blog-content em {
+    @apply text-white/85 italic;
+  }
+  .blog-content ul {
+    @apply list-none mb-4 space-y-2;
+  }
+  .blog-content ul li {
+    @apply pl-4 relative;
+  }
+  .blog-content ul li::before {
+    content: '·';
+    @apply absolute left-0 text-accent font-bold;
+  }
+  .blog-content ol {
+    @apply list-decimal list-inside mb-4 space-y-2;
+  }
+  .blog-content ol li {
+    @apply pl-2;
+  }
+  .blog-content blockquote {
+    @apply border-l-2 border-accent/40 pl-4 my-6 text-white/55 italic;
+  }
+  .blog-content figure {
+    @apply my-8 text-center;
+  }
+  .blog-content figure img {
+    @apply rounded-xl mx-auto max-w-full;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .blog-content figcaption {
+    @apply text-white/35 text-xs mt-3 font-mono leading-relaxed;
+  }
+  .blog-content figure.quote {
+    @apply glass rounded-xl p-6 my-8 text-left not-italic;
+    border-left: 3px solid rgba(0,220,130,0.4);
+  }
+  .blog-content figure.quote blockquote {
+    @apply border-none pl-0 text-white/70 italic text-base;
+  }
+  .blog-content figure.quote figcaption {
+    @apply text-white/35 text-xs mt-3 not-italic;
+  }
+  .blog-content code {
+    @apply font-mono text-accent text-sm bg-white/[0.06] px-1.5 py-0.5 rounded;
+  }
+  .blog-content hr {
+    @apply border-white/[0.08] my-10;
+  }
+  .blog-content .highlight {
+    background-color: rgba(0,220,130,0.15);
+    padding: 0 3px;
+    border-radius: 2px;
+    color: rgba(255,255,255,0.9);
+  }
 }

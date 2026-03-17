@@ -13,9 +13,9 @@ const clients = [
   {
     name: 'Enhance-d',
     href: 'https://www.enhance-d.com/',
-    period: 'Jan 2025 – Present',
+    period: 'Jan 2025 – Jun 2025',
     role: 'Agentic frameworks, backend systems',
-    description: 'Sports nutrition platform',
+    description: 'T1D training & CGM platform',
   },
   {
     name: 'Tyme Wear',

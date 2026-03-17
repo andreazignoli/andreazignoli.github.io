@@ -9,7 +9,7 @@ const techStack = [
 
 export function HowIWork() {
   return (
-    <section className="section-padding border-t border-white/[0.06]">
+    <section id="how-i-work" className="section-padding border-t border-white/[0.06]">
       <div className="container-max">
         <SectionWrapper>
           <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -51,6 +51,23 @@ export function HowIWork() {
                 ))}
               </div>
             </div>
+          </div>
+        </SectionWrapper>
+        <SectionWrapper delay={0.15}>
+          <div className="mt-10 pt-8 border-t border-white/[0.06] flex items-center gap-3 text-white/45 text-sm">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 text-accent/60">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span>
+              Interested in discussing a project proposal?{' '}
+              <a
+                href="mailto:andrea.zignoli@unitn.it"
+                className="text-white/70 hover:text-accent transition-colors font-mono"
+              >
+                andrea.zignoli@unitn.it
+              </a>
+            </span>
           </div>
         </SectionWrapper>
       </div>

@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 const typeColors: Record<string, string> = {
   'Training Science Podcast': 'text-accent border-accent/30 bg-accent/10',
   'Podcast': 'text-[#155799] border-[#155799]/30 bg-[#155799]/10',
+  'Video': 'text-red-400 border-red-400/30 bg-red-400/10',
   'Talk': 'text-white/50 border-white/10 bg-white/[0.04]',
   'Tutorial': 'text-white/50 border-white/10 bg-white/[0.04]',
 }
@@ -70,7 +71,7 @@ export default function TalksPage() {
                         rel="noopener noreferrer"
                         className="text-accent text-xs font-mono hover:underline mt-auto"
                       >
-                        Listen / Watch →
+                        {talk.linkLabel ?? 'Listen / Watch'} →
                       </a>
                     )}
                   </GlassCard>

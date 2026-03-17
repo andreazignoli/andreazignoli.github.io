@@ -38,6 +38,16 @@ export default function TeachingPage() {
                   {item.description && (
                     <p className="text-white/55 text-sm leading-relaxed pt-1">{item.description}</p>
                   )}
+                  {item.link && (
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-accent text-xs font-mono hover:underline pt-1"
+                    >
+                      View course →
+                    </a>
+                  )}
                 </div>
               </div>
             </GlassCard>

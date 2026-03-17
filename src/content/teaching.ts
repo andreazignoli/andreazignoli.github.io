@@ -9,6 +9,7 @@ export const teaching: TeachingItem[] = [
     location: 'Rovereto (Trento), Italy',
     description:
       'Full course (18 academic hours) covering mathematical modelling in sports science: static and dynamic models, AI principles, and hands-on applications in Excel/Google Sheets — from oxygen kinetics to critical power and locomotion.',
+    link: 'https://tiscourse.vercel.app/',
   },
   {
     title: 'Technology and Innovation in Sports (Teaching Assistant)',

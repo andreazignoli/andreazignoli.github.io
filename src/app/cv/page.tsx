@@ -16,13 +16,6 @@ const currentClients = [
     role: 'Modelling, feature design, backend development',
   },
   {
-    name: 'Enhance-d',
-    href: 'https://www.enhance-d.com/',
-    period: 'Jan 2025 – Present',
-    description: 'Sports nutrition platform',
-    role: 'Agentic frameworks, backend systems',
-  },
-  {
     name: 'Tyme Wear',
     href: 'https://www.tymewear.com/',
     period: 'Dec 2024 – Present',
@@ -32,6 +25,13 @@ const currentClients = [
 ]
 
 const previousClients = [
+  {
+    name: 'Enhance-d',
+    href: 'https://www.enhance-d.com/',
+    period: 'Jan 2025 – Jun 2025',
+    description: 'T1D training & CGM platform',
+    role: 'Agentic frameworks, backend systems',
+  },
   {
     name: 'Supersapiens',
     href: 'https://www.supersapiens.com/',
@@ -102,14 +102,26 @@ export default function CVPage() {
             Andrea <GradientText>Zignoli</GradientText>
           </h1>
           <p className="text-white/50 text-sm pt-1">AI Sport Tech Consultant · Verona, Italy</p>
-          <div className="flex gap-4 pt-1 flex-wrap">
+          <div className="flex gap-3 pt-1 flex-wrap">
             <a
-              href="https://www.overleaf.com/read/myfwfsnndgzw"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 glass rounded-lg text-sm text-white/70 hover:text-accent transition-colors font-mono"
+              href="/images/Andrea_CV_feb_2026.pdf"
+              download
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-black text-sm font-semibold hover:bg-accent/90 transition-colors"
             >
-              Download detailed CV (Overleaf) ↗
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Full CV
+            </a>
+            <a
+              href="/images/Andrea_Resume_fall_25.pdf"
+              download
+              className="inline-flex items-center gap-2 px-4 py-2 glass rounded-lg text-white/70 text-sm font-medium hover:text-white hover:bg-white/[0.08] transition-colors"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              2-page résumé
             </a>
           </div>
         </div>

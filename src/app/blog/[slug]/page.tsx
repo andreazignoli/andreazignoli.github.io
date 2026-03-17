@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const contentMap: Record<string, () => Promise<{ default: React.ComponentType }>> = {
+  'down-the-poggio-milano-sanremo': () => import('@/content/post-content/down-the-poggio-milano-sanremo'),
   'oxynet-collective-intelligence': () => import('@/content/post-content/oxynet-collective-intelligence'),
   'bike-handling-road-cycling': () => import('@/content/post-content/bike-handling-road-cycling'),
   'ai-cpet-data': () => import('@/content/post-content/ai-cpet-data'),

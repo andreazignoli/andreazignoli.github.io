@@ -2,6 +2,14 @@ import type { BlogPost } from '@/types'
 
 export const posts: BlogPost[] = [
   {
+    slug: 'down-the-poggio-milano-sanremo',
+    title: 'Down the Poggio: bike handling at the Milano-Sanremo Classic',
+    date: '2026-03-17',
+    excerpt:
+      'The descent from the Poggio is where Milano-Sanremo is won or lost. A look at what makes those 3.5 km so decisive — and what the science of bike handling and optimal trajectories can tell us about it.',
+    hasContent: true,
+  },
+  {
     slug: 'workout-reserve-maximal-mean-power',
     title: 'A model that can evaluate the maximal mean power during exercise?',
     date: '2024-03-21',

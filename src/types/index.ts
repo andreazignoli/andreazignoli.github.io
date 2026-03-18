@@ -32,6 +32,7 @@ export interface BlogPost {
   title: string
   date: string
   excerpt: string
+  image?: string
   externalLink?: string
   hasContent?: boolean
 }

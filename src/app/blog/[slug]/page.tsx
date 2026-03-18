@@ -14,9 +14,25 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = posts.find((p) => p.slug === params.slug)
   if (!post) return {}
+  const imageUrl = post.image
+    ? `https://andreazignoli.github.io${post.image}`
+    : undefined
   return {
     title: `${post.title} — Andrea Zignoli`,
     description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `https://andreazignoli.github.io/blog/${post.slug}`,
+      images: imageUrl ? [{ url: imageUrl, width: 1200, alt: post.title }] : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      creator: '@andrea_zignoli',
+      title: post.title,
+      description: post.excerpt,
+      images: imageUrl ? [imageUrl] : [],
+    },
   }
 }
 

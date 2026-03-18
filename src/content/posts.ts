@@ -7,6 +7,7 @@ export const posts: BlogPost[] = [
     date: '2026-03-17',
     excerpt:
       'The descent from the Poggio is where Milano-Sanremo is won or lost. A look at what makes those 3.5 km so decisive — and what the science of bike handling and optimal trajectories can tell us about it.',
+    image: '/images/down_the_poggio_diorama.png',
     hasContent: true,
   },
   {

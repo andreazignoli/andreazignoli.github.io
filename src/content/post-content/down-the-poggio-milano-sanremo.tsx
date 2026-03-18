@@ -183,6 +183,77 @@ export default function Content() {
         itself rather than just the riding technique.
       </p>
 
+      <h2>Predicting trajectories: from GPS data to optimal control</h2>
+
+      <p>
+        One of the longer-term goals of this research thread is to be able to <em>predict</em> the trajectory a rider
+        will follow on any given descent — and then compare it against what was actually ridden. To do that, you need
+        two things: a model that can generate physically plausible trajectories, and a method to extract real
+        trajectories from GPS or video data.
+      </p>
+
+      <figure>
+        <img
+          src="/images/front_blog_trajectories.png"
+          alt="Trajectories in nature: an eagle, sunflower seeds, and cyclists cornering at Milano-Sanremo"
+          style={{ width: '100%' }}
+        />
+        <figcaption>
+          Trajectories in nature: an eagle pursuing prey, the seeds of a sunflower, and a group of cyclists
+          cornering at the 2024 Milano-Sanremo. All three follow remarkably similar mathematical structures —
+          smooth, curvature-continuous curves. Read more in{' '}
+          <a href="/blog/eagles-sunflowers-cycling-trajectories">Eagles, sunflowers and cycling trajectories</a>.
+        </figcaption>
+      </figure>
+
+      <p>
+        The connection is not coincidental. Experienced riders tend to trace <em>clothoid-like</em> arcs through
+        corners — curves where curvature increases gradually with distance, minimising lateral jerk and keeping the
+        bike near the boundary of the adherence ellipse without sudden changes in force. This is exactly the shape
+        that an optimal control solver also converges on when asked to minimise time through a corner subject to
+        traction constraints. Theory and practice, it turns out, agree.
+      </p>
+
+      <h3>What real race trajectories look like</h3>
+
+      <p>
+        With aerial drone footage and GPS instrumentation it is possible to recover the actual line a rider follows
+        through individual corners. The following comparisons come from different races and show how much the
+        chosen line can vary between riders — and how consequential those differences are for exit speed, and
+        ultimately for the time gap at the finish.
+      </p>
+
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <figure style={{ flex: '1 1 45%', margin: 0 }}>
+          <img
+            src="/images/trajectory_comparison_1.png"
+            alt="Trajectory comparison between riders on a descent — example 1"
+            style={{ width: '100%' }}
+          />
+          <figcaption>
+            Trajectory comparison between two riders on the same corner. The difference in racing line is
+            clearly visible; the wider entry allows a higher exit speed.
+          </figcaption>
+        </figure>
+        <figure style={{ flex: '1 1 45%', margin: 0 }}>
+          <img
+            src="/images/trajectory_comparison_2.png"
+            alt="Trajectory comparison between riders on a descent — example 2"
+            style={{ width: '100%' }}
+          />
+          <figcaption>
+            A second corner from the same dataset. Note how the optimal line (dashed) and the actual ridden
+            line diverge at entry but converge at the apex — a characteristic of the early-apex strategy.
+          </figcaption>
+        </figure>
+      </div>
+
+      <p>
+        These comparisons motivate the simulation approach below: if you know the road geometry and the physical
+        limits of the rider–bike system, you can compute the <em>fastest possible</em> trajectory and use it as a
+        reference to evaluate what was actually ridden.
+      </p>
+
       <h2>Interactive 3D simulation of the optimal descent</h2>
 
       <p>

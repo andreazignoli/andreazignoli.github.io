@@ -17,15 +17,14 @@ export default function Content() {
         <a href="https://www.milanosanremo.it/percorso-milano-sanremo-2026/" target="_blank" rel="noopener noreferrer">
           Milano-Sanremo
         </a>
-        , the longest one-day Classic on the professional cycling calendar. At roughly 294 km,{' '}
+        , the longest one-day Classic on the professional cycling calendar. At roughly 298 km,{' '}
         <em>La Classicissima</em> is a race of patience that explodes in the final kilometres. The Poggio rises
-        just 162 m over 3.7 km at an average gradient of 3.7%, but its position — with less than 6 km to the finish
-        — makes the descent that follows one of the most consequential in all of cycling.
+        just 162 m over 3.7 km at an average gradient of 3.7%, but its position, with less than 6 km to the finish, makes the descent that follows one of the most consequential in all of cycling.
       </p>
 
       <p>
-        The descent from the Poggio is roughly 3.5 km of technical, high-speed road threading through the outskirts
-        of San Remo. Unlike alpine descents where gaps can be managed, here the proximity of the finish line means
+        The descent from the Poggio is roughly 3.5 km of high-speed road threading through the outskirts
+        of Sanremo. Here, the proximity of the finish line means
         that every second lost is unrecoverable. Riders must negotiate several key corners at speeds exceeding 80 km/h,
         often in a compact group after 290 km of racing. The combination of fatigue, tight corners, narrow roads, and
         racing urgency makes this one of the most studied sections in professional cycling.
@@ -50,8 +49,8 @@ export default function Content() {
       </p>
 
       <p>
-        The <strong>red trail</strong> behind the bike marks where it has already been — fading out as it recedes in
-        time — while the <strong>black line</strong> ahead shows the next section of predicted path. On the top left,
+        The <strong>red trail</strong> behind the bike marks where it has already been, fading out as it recedes in
+        time, while the <strong>black line</strong> ahead shows the next section of predicted path. On the top left,
         the <strong>g-g diagram</strong> tracks the instantaneous combination of lateral and longitudinal acceleration
         normalised by gravity. On the top right, a <strong>minimap</strong> gives a bird&apos;s-eye overview of
         position along the full descent. Use the <strong>Route cursor</strong> slider to scrub; toggle{' '}
@@ -85,7 +84,7 @@ export default function Content() {
       </figure>
 
       <p>
-        Nature — and human movement within it — tends toward smooth, continuous transitions. Experienced riders trace{' '}
+        Nature — and human movement within it, tends toward smooth, continuous transitions. Experienced riders trace{' '}
         <em>clothoid-like</em> arcs through corners: curves where curvature increases gradually with distance,
         minimising lateral jerk and keeping the bike near the limit of traction without abrupt changes in force. This
         is not a conscious geometric choice; it emerges from the same optimisation that governs an eagle&apos;s
@@ -140,17 +139,17 @@ export default function Content() {
 
       <p>
         To understand what separates a great descent from an average one, it helps to have a framework. In vehicle
-        dynamics — originally developed for motorsport — the <strong>g-g diagram</strong> (also called the friction
+        dynamics, originally developed for motorsport, the <strong>g-g diagram</strong> (also called the friction
         circle or adherence ellipse) is the standard tool.
       </p>
 
       <p>
         The idea is simple: a tyre can only generate a finite total force at the road contact patch. Braking demands
-        longitudinal force; cornering demands lateral force. When you need both simultaneously — braking into a
-        corner — the two forces compete for the same limited tyre capacity. Plot the longitudinal acceleration on one
+        longitudinal force; cornering demands lateral force. When you need both simultaneously, braking into a
+        corner, the two forces compete for the same limited tyre capacity. Plot the longitudinal acceleration on one
         axis and the lateral acceleration on the other, normalised by gravity (in <em>g</em>), and every instant of
         riding maps to a point in this diagram. The boundary of the cloud of points traces the rider&apos;s{' '}
-        <em>adherence ellipse</em> — how close they are to the physical limit of the tyre at every moment.
+        <em>adherence ellipse</em>: how close they are to the physical limit of the tyre at every moment.
       </p>
 
       <figure>
@@ -163,7 +162,7 @@ export default function Content() {
 
       <p>
         Using a wind-rose analogy: <em>East</em> and <em>West</em> represent high lateral accelerations, typical
-        of fast cornering. <em>North</em> is strong positive longitudinal acceleration — a sprint or a sudden drop
+        of fast cornering. <em>North</em> is strong positive longitudinal acceleration: a sprint or a sudden drop
         in gradient. <em>South</em> is hard braking. A rider who explores all four directions simultaneously is
         one who blends braking and cornering fluidly, keeping the resultant force near the outer boundary of the
         ellipse throughout.
@@ -174,10 +173,10 @@ export default function Content() {
       <p>
         In practice, two distinct patterns emerge when comparing riders of different skill levels through the same
         corner. Less experienced riders show a characteristic <strong>cross (✝) shape</strong>: brake hard first
-        (high longitudinal deceleration, low lateral), then turn (high lateral, low longitudinal) — two sequential
+        (high longitudinal deceleration, low lateral), then turn (high lateral, low longitudinal): two sequential
         phases with a dead zone in between. Expert riders show a <strong>butterfly (🦋) wing shape</strong>: they
         blend braking and cornering simultaneously, keeping the resultant acceleration vector near the boundary of
-        the ellipse throughout. The butterfly rider is exploiting the friction budget more efficiently — the same
+        the ellipse throughout. The butterfly rider is exploiting the friction budget more efficiently: the same
         tyre, used better.
       </p>
 
@@ -247,7 +246,7 @@ export default function Content() {
       <p>
         From a vehicle dynamics perspective, this is a deliberate intervention on the <em>rider–bike coupling</em>:
         a lower centre of mass reduces the overturning moment during cornering and improves the bike&apos;s
-        resistance to tipping at the traction limit — effectively pushing the outer boundary of the adherence
+        resistance to tipping at the traction limit, effectively pushing the outer boundary of the adherence
         ellipse further outward. The trade-off is a different pedalling geometry and a compromised ability to sprint
         out of corners: a calculated risk on a descent that leads directly to a flat finish.
       </p>
@@ -273,13 +272,12 @@ export default function Content() {
       <h2>Closing thoughts</h2>
 
       <p>
-        The Poggio descent compresses everything that makes cycling descending fascinating into 3.5 km and roughly
-        90 seconds of riding. It is short enough that every corner matters, fast enough that physics dominates over
+        The Poggio descent compresses everything that makes cycling descending fascinating into 3.5 km of riding. It is short enough that every corner matters, fast enough that physics dominates over
         strategy, and consequential enough that careers are defined on it.
       </p>
 
       <p>
-        What optimal control simulation reveals — and what the real trajectory comparisons confirm — is that the
+        What optimal control simulation reveals, and what the real trajectory comparisons confirm, is that the
         room for truly individual choice is narrower than it appears. The road geometry, traction constraints, and
         the neuromuscular preference for smooth, jerk-minimising motion conspire to funnel riders toward the same
         line. What separates Nibali from the peloton, or Mohoric from the chasers, is not a radically different
@@ -289,7 +287,7 @@ export default function Content() {
 
       <p>
         The simulation above makes that boundary visible. The g-g diagram in the top-left corner shows you, at every
-        instant, how much of the available friction is being spent — and how little is being left in reserve.
+        instant, how much of the available friction is being spent, and how little is being left in reserve.
       </p>
 
       {/* ── 7. FURTHER READING + REFERENCES ─────────────────────────────── */}
@@ -302,7 +300,7 @@ export default function Content() {
 
       <ul>
         <li>
-          <a href="/blog/bike-handling-road-cycling">Notes on bike handling in road cycling</a> — an introduction to
+          <a href="/blog/bike-handling-road-cycling">Notes on bike handling in road cycling</a>: an introduction to
           the g-g diagram, racing lines, and what bike handling really means from a vehicle dynamics perspective.
         </li>
         <li>

@@ -89,10 +89,9 @@ export default function Content() {
           height="360"
           src="https://www.youtube.com/embed/9qWVGvr-x9Y"
           title="Vincenzo Nibali solo descent at Milano-Sanremo 2018"
-          frameBorder="0"
+          style={{ borderRadius: 8, border: 'none' }}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          style={{ borderRadius: 8 }}
         />
         <figcaption>Vincenzo Nibali solo attacks on the Poggio descent — Milano-Sanremo 2018.</figcaption>
       </figure>
@@ -121,10 +120,9 @@ export default function Content() {
           height="360"
           src="https://www.youtube.com/embed/dMS4pFw21eI"
           title="Matej Mohoric dropper post descent at Milano-Sanremo 2022"
-          frameBorder="0"
+          style={{ borderRadius: 8, border: 'none' }}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          style={{ borderRadius: 8 }}
         />
         <figcaption>
           Matej Mohoric uses a dropper post to lower his saddle and centre of mass on the Poggio descent —
@@ -214,44 +212,50 @@ export default function Content() {
         traction constraints. Theory and practice, it turns out, agree.
       </p>
 
-      <h3>What real race trajectories look like</h3>
+      <h3>Physics as a predictor of real trajectories</h3>
 
       <p>
         With aerial drone footage and GPS instrumentation it is possible to recover the actual line a rider follows
-        through individual corners. The following comparisons come from different races and show how much the
-        chosen line can vary between riders — and how consequential those differences are for exit speed, and
-        ultimately for the time gap at the finish.
+        through individual corners and compare it against a physically predicted reference. The two examples below
+        come from different races, and they both illustrate the same point: <em>physics imposes a strong prior on
+        where riders go</em>. The predicted and observed trajectories agree to a degree that would be surprising if
+        the riders were simply making unconstrained choices.
       </p>
 
       <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
         <figure style={{ flex: '1 1 45%', margin: 0 }}>
           <img
             src="/images/trajectory_comparison_1.png"
-            alt="Trajectory comparison between riders on a descent — example 1"
+            alt="Predicted vs observed trajectory — example 1"
             style={{ width: '100%' }}
           />
           <figcaption>
-            Trajectory comparison between two riders on the same corner. The difference in racing line is
-            clearly visible; the wider entry allows a higher exit speed.
+            Example 1: predicted (reference) vs observed trajectory through a corner. The agreement suggests
+            that riders are not freely choosing their line — the road geometry and traction constraints are
+            doing most of the work.
           </figcaption>
         </figure>
         <figure style={{ flex: '1 1 45%', margin: 0 }}>
           <img
             src="/images/trajectory_comparison_2.png"
-            alt="Trajectory comparison between riders on a descent — example 2"
+            alt="Predicted vs observed trajectory — example 2"
             style={{ width: '100%' }}
           />
           <figcaption>
-            A second corner from the same dataset. Note how the optimal line (dashed) and the actual ridden
-            line diverge at entry but converge at the apex — a characteristic of the early-apex strategy.
+            Example 2: a different corner, same story. The physical model anticipates the rider&apos;s line
+            well before the corner is entered.
           </figcaption>
         </figure>
       </div>
 
       <p>
-        These comparisons motivate the simulation approach below: if you know the road geometry and the physical
-        limits of the rider–bike system, you can compute the <em>fastest possible</em> trajectory and use it as a
-        reference to evaluate what was actually ridden.
+        What objective function are riders actually minimising? Almost certainly not lap time alone. As discussed in{' '}
+        <a href="/blog/eagles-sunflowers-cycling-trajectories">Eagles, sunflowers and cycling trajectories</a>, the
+        evidence points more strongly toward <em>jerk minimisation</em> — smooth, curvature-continuous lines that
+        avoid sudden changes in lateral force. The true objective is probably a blend of multiple factors: time,
+        effort, perceived risk, and comfort. What is clear is that the physically constrained solution and the
+        observed solution converge — riders are, perhaps without knowing it, tracing near-optimal paths through the
+        geometry that physics allows.
       </p>
 
       <h2>Interactive 3D simulation of the optimal descent</h2>

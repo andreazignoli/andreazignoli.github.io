@@ -18,3 +18,9 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Raw simulation data and scratch 3D assets
+public/data/OCP_RoadSprint_bio_model_OCP_result.txt
+public/data/*.stl
+public/data/*.glb
+!public/data/canyon_Inflite_full.glb

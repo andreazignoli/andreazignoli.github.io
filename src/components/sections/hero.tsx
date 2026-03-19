@@ -64,10 +64,10 @@ export function Hero() {
 
             <div className="flex flex-wrap gap-3 pt-2 justify-end">
               <Link
-                href="#how-i-work"
+                href="mailto:andrea.zignoli@unitn.it"
                 className="px-5 py-2.5 rounded-lg bg-accent text-black text-sm font-semibold hover:bg-accent/90 transition-colors"
               >
-                How I work
+                Get in touch
               </Link>
               <Link
                 href="/publications"

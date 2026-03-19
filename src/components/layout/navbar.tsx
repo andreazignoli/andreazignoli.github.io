@@ -6,9 +6,6 @@ import { cn } from '@/lib/utils'
 
 const navLinks = [
   { href: '/publications', label: 'Publications' },
-  { href: '/talks', label: 'Talks' },
-  { href: '/teaching', label: 'Teaching' },
-  { href: '/portfolio', label: 'Portfolio' },
   { href: '/blog', label: 'Blog' },
   { href: '/cv', label: 'CV' },
 ]

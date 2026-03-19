@@ -8,6 +8,7 @@ export const portfolio: PortfolioItem[] = [
     image: '/images/semantic_analysis.png',
     description:
       'A two-step NLP pipeline extracts emotional tone (joy, sadness) and salient keywords from athlete comments. XGBoost modelling identified subjective "feel" as the strongest predictor of emotional state. Demonstrates how semantic analysis can complement traditional internal load monitoring.',
+    link: 'https://sportperfsci.com/wp-content/uploads/2025/07/SPSR261__Zignoli.pdf',
   },
   {
     title: 'AI Coaching: Computational Paths of Knowledge',
@@ -26,14 +27,6 @@ export const portfolio: PortfolioItem[] = [
     description:
       'An innovative framework within Sports Science 3.0 integrating AI with physiological metrics. RAG-AI processes domain-specific knowledge to enable nuanced interpretation of HRV/RHR including 60-day reference values and 7-day rolling averages. Emphasises synergy between AI analytics and human coaching expertise.',
     link: 'https://martin-buchheit.net/wp-content/uploads/2024/11/SPSR241_Zignoli.pdf',
-  },
-  {
-    title: 'The Oxynet Project',
-    excerpt:
-      'Deep learning applied to cardiopulmonary exercise test interpretation — a collective intelligence approach.',
-    image: '/images/oxynet.png',
-    description:
-      'Application of deep learning to automate and standardise the interpretation of CPET data, enabling large-scale analysis and reducing inter-rater variability.',
   },
   {
     title: 'Vehicle Dynamics & Cycling Trajectories',

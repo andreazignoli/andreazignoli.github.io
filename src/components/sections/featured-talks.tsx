@@ -1,19 +1,18 @@
 import Link from 'next/link'
 import { SectionWrapper } from '@/components/shared/section-wrapper'
-import { GlassCard } from '@/components/shared/glass-card'
 import { GradientText } from '@/components/shared/gradient-text'
 import { talks } from '@/content/talks'
 
 const typeColors: Record<string, string> = {
   'Training Science Podcast': 'text-accent',
-  'Podcast': 'text-secondary',
+  'Podcast': 'text-accent',
   'Video': 'text-red-400',
-  'Talk': 'text-white/50',
-  'Tutorial': 'text-white/50',
+  'Talk': 'text-white/40',
+  'Tutorial': 'text-white/40',
 }
 
 export function FeaturedTalks() {
-  const featured = talks.slice(0, 4)
+  const featured = talks.slice(0, 5)
 
   return (
     <section className="section-padding border-t border-white/[0.06]">
@@ -35,42 +34,42 @@ export function FeaturedTalks() {
           </div>
         </SectionWrapper>
 
-        <div className="grid sm:grid-cols-2 gap-4">
-          {featured.map((talk, i) => (
-            <SectionWrapper key={talk.title} delay={i * 0.08}>
-              <GlassCard className="h-full flex flex-col gap-3">
-                <div className="flex items-start justify-between gap-2">
-                  <span
-                    className={`font-mono text-xs uppercase tracking-wider ${typeColors[talk.type] ?? 'text-white/40'}`}
-                  >
+        <SectionWrapper delay={0.1}>
+          <div className="space-y-0 divide-y divide-white/[0.06]">
+            {featured.map((talk, i) => (
+              <div key={i} className="py-4 group">
+                <div className="flex items-start gap-4">
+                  <span className={`font-mono text-xs uppercase tracking-wider mt-0.5 w-20 shrink-0 ${typeColors[talk.type] ?? 'text-white/35'}`}>
                     {talk.type}
                   </span>
-                  <span className="text-white/30 text-xs font-mono shrink-0">
-                    {talk.date.slice(0, 4)}
-                  </span>
+                  <div className="flex-1 min-w-0">
+                    {talk.link ? (
+                      <a
+                        href={talk.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white/80 text-sm leading-snug hover:text-accent transition-colors"
+                      >
+                        {talk.title}
+                      </a>
+                    ) : (
+                      <p className="text-white/80 text-sm leading-snug">{talk.title}</p>
+                    )}
+                    {talk.description && (
+                      <p className="text-white/35 text-xs mt-1 leading-relaxed line-clamp-1">{talk.description}</p>
+                    )}
+                  </div>
+                  <span className="text-white/25 text-xs font-mono shrink-0">{talk.date.slice(0, 4)}</span>
                 </div>
-                <h3 className="text-white text-sm font-semibold leading-snug">{talk.title}</h3>
-                <p className="text-white/50 text-xs leading-relaxed flex-1">{talk.description}</p>
-                {talk.link && (
-                  <a
-                    href={talk.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-accent text-xs font-mono hover:underline mt-auto"
-                  >
-                    {talk.linkLabel ?? 'Listen'} →
-                  </a>
-                )}
-              </GlassCard>
-            </SectionWrapper>
-          ))}
-        </div>
-
-        <div className="mt-4 sm:hidden">
-          <Link href="/talks" className="text-sm text-accent hover:underline font-mono">
-            View all talks →
-          </Link>
-        </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 sm:hidden">
+            <Link href="/talks" className="text-sm text-accent hover:underline font-mono">
+              View all talks →
+            </Link>
+          </div>
+        </SectionWrapper>
       </div>
     </section>
   )

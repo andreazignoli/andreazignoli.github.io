@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-A more detailed version is available at this [Overleaf link](https://www.overleaf.com/read/myfwfsnndgzw).
+Download: [CV (PDF)](/images/Andrea_CV.pdf) &nbsp;|&nbsp; [Resume (PDF)](/images/Andrea_Resume.pdf)
 
 ---
 

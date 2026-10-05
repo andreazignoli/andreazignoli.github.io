@@ -68,7 +68,7 @@ export default function Content() {
 
       <figure>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/The_racing_line_-_Flickr_-_exfordy.jpg/960px-The_racing_line_-_Flickr_-_exfordy.jpg" alt="The racing line" style={{ width: '50%' }} />
-        <figcaption>The racing line — not only a matter of final time minimisation, but also comfort and risk. Clothoids are often used because they provide a gradual change in curvature, which helps minimize discomfort for the driver and reduce wear and tear on vehicles. Photo credits: Brian Snelson from Hockley, Essex, England, CC BY 2.0, via Wikimedia Commons.</figcaption>
+        <figcaption>The racing line is not only a matter of final time minimisation, but also comfort and risk. Clothoids are often used because they provide a gradual change in curvature, which helps minimize discomfort for the driver and reduce wear and tear on vehicles. Photo credits: Brian Snelson from Hockley, Essex, England, CC BY 2.0, via Wikimedia Commons.</figcaption>
       </figure>
 
       <h2>Just a coincidence?</h2>
@@ -94,7 +94,7 @@ export default function Content() {
       <h3>Practical application</h3>
 
       <p>
-        &ldquo;OK, Andrea, but please what do I need to know this for?&rdquo; Well, let&apos;s assume you are collecting cycling GPS positions every second &mdash; how do you connect those points? Now, you should already know what I would suggest. Your best bet is to take the GPS points and fit them with a spline of clothoids.
+        &ldquo;OK, Andrea, but please what do I need to know this for?&rdquo; Well, let&apos;s assume you are collecting cycling GPS positions every second. How do you connect those points? Now, you should already know what I would suggest. Your best bet is to take the GPS points and fit them with a spline of clothoids.
       </p>
     </>
   )

@@ -39,7 +39,7 @@ export default function Content() {
 
       {/* ── 2. SPARK CURIOSITY: 3D SIMULATION ───────────────────────────── */}
 
-      <h2>An optimal descent — in three dimensions</h2>
+      <h2>An optimal descent in three dimensions</h2>
 
       <p>
         What would the Poggio descent look like if ridden at the physical limit of traction, from start to finish?
@@ -65,7 +65,7 @@ export default function Content() {
 
       <p>
         One of the most striking results in this line of research is how well a physically constrained model can
-        anticipate the line a rider will actually follow — without any prior knowledge of that rider&apos;s
+        anticipate the line a rider will actually follow, without any prior knowledge of that rider&apos;s
         individual style or strategy. The reason lies in something fundamental about how humans move.
       </p>
 
@@ -77,25 +77,25 @@ export default function Content() {
         />
         <figcaption>
           An eagle pursuing prey, the seeds of a sunflower, and a group of cyclists cornering at the 2024
-          Milano-Sanremo all follow remarkably similar mathematical structures — smooth, curvature-continuous curves.
+          Milano-Sanremo all follow remarkably similar mathematical structures: smooth, curvature-continuous curves.
           Read more in{' '}
           <a href="/blog/eagles-sunflowers-cycling-trajectories">Eagles, sunflowers and cycling trajectories</a>.
         </figcaption>
       </figure>
 
       <p>
-        Nature — and human movement within it, tends toward smooth, continuous transitions. Experienced riders trace{' '}
+        Nature, and human movement within it, tends toward smooth, continuous transitions. Experienced riders trace{' '}
         <em>clothoid-like</em> arcs through corners: curves where curvature increases gradually with distance,
         minimising lateral jerk and keeping the bike near the limit of traction without abrupt changes in force. This
         is not a conscious geometric choice; it emerges from the same optimisation that governs an eagle&apos;s
         pursuit trajectory or the spiral of a sunflower. As explored in{' '}
         <a href="/blog/eagles-sunflowers-cycling-trajectories">Eagles, sunflowers and cycling trajectories</a>, the
         evidence points more strongly toward <em>jerk minimisation</em> than toward pure time minimisation as the
-        underlying objective — smooth transitions are intrinsically preferred by the neuromuscular system.
+        underlying objective: smooth transitions are intrinsically preferred by the neuromuscular system.
       </p>
 
       <p>
-        The consequence is that a physical model — given only the road geometry and traction constraints — converges
+        The consequence is that a physical model, given only the road geometry and traction constraints, converges
         on the same trajectory that riders empirically tend to follow. Theory and practice agree, not by coincidence,
         but because both are solutions to the same underlying problem.
       </p>
@@ -112,7 +112,7 @@ export default function Content() {
         <figure style={{ flex: '1 1 45%', margin: 0 }}>
           <img
             src="/images/trajectory_comparison_1.png"
-            alt="Predicted vs observed trajectory — example 1"
+            alt="Predicted vs observed trajectory, example 1"
             style={{ width: '100%' }}
           />
           <figcaption>
@@ -123,7 +123,7 @@ export default function Content() {
         <figure style={{ flex: '1 1 45%', margin: 0 }}>
           <img
             src="/images/trajectory_comparison_2.png"
-            alt="Predicted vs observed trajectory — example 2"
+            alt="Predicted vs observed trajectory, example 2"
             style={{ width: '100%' }}
           />
           <figcaption>
@@ -190,7 +190,7 @@ export default function Content() {
       <p>
         Research on professional cyclists at an individual time trial with technical content showed that a{' '}
         <strong>10% larger cloud in the g-g diagram was associated with 20 positions gained</strong> in the final
-        ranking — a large effect for a difference invisible to the naked eye on TV. A 10% improvement in bike
+        ranking: a large effect for a difference invisible to the naked eye on TV. A 10% improvement in bike
         handling ability was estimated to translate to roughly 13 seconds gained over a 5 km technical section.
       </p>
 
@@ -198,7 +198,7 @@ export default function Content() {
         In the live g-g diagram in the simulation above, you can watch this unfold in real time: notice how the
         active point swings from the braking region into the lateral region as the bike enters each corner, and
         how deep into the ellipse the optimal solution pushes at the apex. That is the adherence budget being
-        spent — nothing held in reserve.
+        spent, with nothing held in reserve.
       </p>
 
       {/* ── 5. BONUS: ICONIC DESCENTS ────────────────────────────────────── */}
@@ -207,11 +207,11 @@ export default function Content() {
 
       <p>
         If you want to see what the physics of the Poggio descent looks like from the saddle, the two videos below
-        are essential viewing. They are not our content — but they are the best way to get a feel for the speeds,
+        are essential viewing. They are not our content, but they are the best way to get a feel for the speeds,
         the road width, and what it means to ride at the limit on this particular descent.
       </p>
 
-      <h3>Nibali 2018 — the definitive attack</h3>
+      <h3>Nibali 2018: the definitive attack</h3>
 
       <p>
         Vincenzo Nibali&apos;s solo attack on the Poggio descent in 2018 remains the most iconic moment in recent
@@ -230,14 +230,14 @@ export default function Content() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
-        <figcaption>Vincenzo Nibali solo attacks on the Poggio descent — Milano-Sanremo 2018.</figcaption>
+        <figcaption>Vincenzo Nibali solo attacks on the Poggio descent, Milano-Sanremo 2018.</figcaption>
       </figure>
 
-      <h3>Mohoric 2022 — the dropper post gambit</h3>
+      <h3>Mohoric 2022: the dropper post gambit</h3>
 
       <p>
         Matej Mohoric&apos;s 2022 victory introduced a detail that caused considerable debate: he descended the
-        Poggio with his seat lowered using a <strong>dropper post</strong> — a mechanism borrowed from mountain
+        Poggio with his seat lowered using a <strong>dropper post</strong>, a mechanism borrowed from mountain
         biking that allows the rider to drop the saddle height on the fly. By lowering the saddle, Mohoric reduced
         his centre of mass height and shifted his body position rearward, increasing rear wheel traction and
         improving balance through the corners.
@@ -262,7 +262,7 @@ export default function Content() {
           allowFullScreen
         />
         <figcaption>
-          Matej Mohoric uses a dropper post to lower his saddle and centre of mass on the Poggio descent —
+          Matej Mohoric uses a dropper post to lower his saddle and centre of mass on the Poggio descent,
           Milano-Sanremo 2022.
         </figcaption>
       </figure>
@@ -304,7 +304,7 @@ export default function Content() {
           the g-g diagram, racing lines, and what bike handling really means from a vehicle dynamics perspective.
         </li>
         <li>
-          <a href="/blog/eagles-sunflowers-cycling-trajectories">Eagles, sunflowers and cycling trajectories</a> — on
+          <a href="/blog/eagles-sunflowers-cycling-trajectories">Eagles, sunflowers and cycling trajectories</a>: on
           clothoids, jerk minimisation, and why nature and optimal riders tend to trace the same smooth curves.
         </li>
       </ul>

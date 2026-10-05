@@ -3,16 +3,17 @@ import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Navbar } from '@/components/layout/navbar'
 import { Footer } from '@/components/layout/footer'
+import { themeInitScript } from '@/components/layout/theme-toggle'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Andrea Zignoli — AI Sport Tech Consultant',
+  title: 'Andrea Zignoli | AI Sport Tech Consultant',
   description:
     'I help sport tech startups turn physiology and performance data into production-ready AI solutions. M.Eng. Mechatronics + PhD Sports Science.',
   openGraph: {
-    title: 'Andrea Zignoli — AI Sport Tech Consultant',
+    title: 'Andrea Zignoli | AI Sport Tech Consultant',
     description:
-      'Bridging sports science research and deployed code — from physiology models to production APIs.',
+      'Bridging sports science research and deployed code, from physiology models to production APIs.',
     url: 'https://andreazignoli.github.io',
     siteName: 'Andrea Zignoli',
     locale: 'en_US',
@@ -33,7 +34,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${GeistSans.variable} ${GeistMono.variable}`}
+      suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
       <body className="bg-background text-foreground antialiased font-sans">
         <Navbar />
         {children}

@@ -3,7 +3,7 @@ import { GlassCard } from '@/components/shared/glass-card'
 import { GradientText } from '@/components/shared/gradient-text'
 
 export const metadata: Metadata = {
-  title: 'CV — Andrea Zignoli',
+  title: 'CV | Andrea Zignoli',
   description: 'Curriculum vitae of Andrea Zignoli, AI Sport Tech Consultant.',
 }
 
@@ -70,19 +70,19 @@ const education = [
 
 const techStack = {
   'Languages & Frameworks': [
-    'Python (10+ yrs) — Pandas, scikit-learn, TensorFlow/Keras, FastAPI, Flask',
-    'R — dplyr, ggplot for statistical analysis',
-    'Matlab/Maple — numerical simulations, symbolic computation',
+    'Python (10+ yrs): Pandas, scikit-learn, TensorFlow/Keras, FastAPI, Flask',
+    'R: dplyr, ggplot for statistical analysis',
+    'Matlab/Maple: numerical simulations, symbolic computation',
   ],
   'AI & ML': [
-    'Deep Learning — LSTM, CNN, time-series models',
-    'LLM Pipelines — Claude Code, agentic frameworks, RAG',
-    'First-principles modelling — differential equations, optimal control',
+    'Deep Learning: LSTM, CNN, time-series models',
+    'LLM Pipelines: Claude Code, agentic frameworks, RAG',
+    'First-principles modelling: differential equations, optimal control',
   ],
   'Deployment & DevOps': [
     'Docker, AWS Lambda, Heroku, Lightsail',
-    'API development — FastAPI, Flask, Tornado',
-    'Git workflows — GitHub, GitLab, Bitbucket',
+    'API development: FastAPI, Flask, Tornado',
+    'Git workflows: GitHub, GitLab, Bitbucket',
   ],
   'Signal Processing': [
     'Time- and frequency-domain analysis',
@@ -101,12 +101,12 @@ export default function CVPage() {
           <h1 className="text-4xl md:text-5xl font-bold">
             Andrea <GradientText>Zignoli</GradientText>
           </h1>
-          <p className="text-white/50 text-sm pt-1">AI Sport Tech Consultant · Verona, Italy</p>
+          <p className="text-foreground/50 text-sm pt-1">AI Sport Tech Consultant · Verona, Italy</p>
           <div className="flex gap-3 pt-1 flex-wrap">
             <a
               href="/images/Andrea_CV_feb_2026.pdf"
               download
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-black text-sm font-semibold hover:bg-accent/90 transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-accent-foreground text-sm font-semibold hover:bg-accent/90 transition-colors"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
@@ -116,7 +116,7 @@ export default function CVPage() {
             <a
               href="/images/Andrea_Resume_fall_25.pdf"
               download
-              className="inline-flex items-center gap-2 px-4 py-2 glass rounded-lg text-white/70 text-sm font-medium hover:text-white hover:bg-white/[0.08] transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2 glass rounded-lg text-foreground/70 text-sm font-medium hover:text-foreground hover:bg-foreground/[0.08] transition-colors"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
@@ -129,7 +129,7 @@ export default function CVPage() {
         <div className="space-y-12">
           {/* Current Clients */}
           <section>
-            <h2 className="text-white font-bold text-xl mb-4 flex items-center gap-3">
+            <h2 className="text-foreground font-bold text-xl mb-4 flex items-center gap-3">
               <span className="w-6 h-px bg-accent" />
               Current Clients
             </h2>
@@ -143,12 +143,12 @@ export default function CVPage() {
                         href={c.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white font-semibold hover:text-accent transition-colors"
+                        className="text-foreground font-semibold hover:text-accent transition-colors"
                       >
                         {c.name}
                       </a>
-                      <p className="text-white/40 text-xs">{c.description}</p>
-                      <p className="text-white/60 text-sm mt-0.5">{c.role}</p>
+                      <p className="text-foreground/55 text-xs">{c.description}</p>
+                      <p className="text-foreground/60 text-sm mt-0.5">{c.role}</p>
                     </div>
                   </div>
                 </GlassCard>
@@ -158,7 +158,7 @@ export default function CVPage() {
 
           {/* Previous Clients */}
           <section>
-            <h2 className="text-white font-bold text-xl mb-4 flex items-center gap-3">
+            <h2 className="text-foreground font-bold text-xl mb-4 flex items-center gap-3">
               <span className="w-6 h-px bg-accent/40" />
               Previous Clients
             </h2>
@@ -166,18 +166,18 @@ export default function CVPage() {
               {previousClients.map((c) => (
                 <GlassCard key={c.name} hover={false}>
                   <div className="flex flex-col sm:flex-row sm:items-start gap-3">
-                    <div className="shrink-0 w-32 font-mono text-xs text-white/30">{c.period}</div>
+                    <div className="shrink-0 w-32 font-mono text-xs text-foreground/50">{c.period}</div>
                     <div>
                       <a
                         href={c.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white font-semibold hover:text-accent transition-colors"
+                        className="text-foreground font-semibold hover:text-accent transition-colors"
                       >
                         {c.name}
                       </a>
-                      <p className="text-white/40 text-xs">{c.description}</p>
-                      <p className="text-white/60 text-sm mt-0.5">{c.role}</p>
+                      <p className="text-foreground/55 text-xs">{c.description}</p>
+                      <p className="text-foreground/60 text-sm mt-0.5">{c.role}</p>
                     </div>
                   </div>
                 </GlassCard>
@@ -187,7 +187,7 @@ export default function CVPage() {
 
           {/* Technical Stack */}
           <section>
-            <h2 className="text-white font-bold text-xl mb-4 flex items-center gap-3">
+            <h2 className="text-foreground font-bold text-xl mb-4 flex items-center gap-3">
               <span className="w-6 h-px bg-accent" />
               Technical Stack
             </h2>
@@ -199,7 +199,7 @@ export default function CVPage() {
                   </h3>
                   <ul className="space-y-1">
                     {items.map((item) => (
-                      <li key={item} className="text-white/60 text-sm flex items-start gap-2">
+                      <li key={item} className="text-foreground/60 text-sm flex items-start gap-2">
                         <span className="text-accent/40 mt-1">·</span>
                         {item}
                       </li>
@@ -212,7 +212,7 @@ export default function CVPage() {
 
           {/* Research */}
           <section>
-            <h2 className="text-white font-bold text-xl mb-4 flex items-center gap-3">
+            <h2 className="text-foreground font-bold text-xl mb-4 flex items-center gap-3">
               <span className="w-6 h-px bg-accent" />
               Research Background
             </h2>
@@ -222,9 +222,9 @@ export default function CVPage() {
                   <div className="flex flex-col sm:flex-row sm:items-start gap-3">
                     <div className="shrink-0 w-32 font-mono text-xs text-accent/60">{r.period}</div>
                     <div>
-                      <p className="text-white font-semibold text-sm">{r.title}</p>
+                      <p className="text-foreground font-semibold text-sm">{r.title}</p>
                       <p className="text-accent/70 text-xs font-mono">{r.org}</p>
-                      <p className="text-white/55 text-sm mt-0.5">{r.description}</p>
+                      <p className="text-foreground/55 text-sm mt-0.5">{r.description}</p>
                     </div>
                   </div>
                 </GlassCard>
@@ -234,17 +234,17 @@ export default function CVPage() {
 
           {/* Education */}
           <section>
-            <h2 className="text-white font-bold text-xl mb-4 flex items-center gap-3">
+            <h2 className="text-foreground font-bold text-xl mb-4 flex items-center gap-3">
               <span className="w-6 h-px bg-accent" />
               Education
             </h2>
             <div className="space-y-2">
               {education.map((e) => (
-                <div key={e.degree} className="flex items-start gap-4 py-3 border-b border-white/[0.05]">
+                <div key={e.degree} className="flex items-start gap-4 py-3 border-b border-foreground/[0.05]">
                   <span className="font-mono text-xs text-accent/60 w-12 shrink-0">{e.year}</span>
                   <div>
-                    <p className="text-white font-semibold text-sm">{e.degree}</p>
-                    <p className="text-white/40 text-xs">{e.institution}</p>
+                    <p className="text-foreground font-semibold text-sm">{e.degree}</p>
+                    <p className="text-foreground/55 text-xs">{e.institution}</p>
                   </div>
                 </div>
               ))}
@@ -253,15 +253,15 @@ export default function CVPage() {
 
           {/* Service */}
           <section>
-            <h2 className="text-white font-bold text-xl mb-4 flex items-center gap-3">
+            <h2 className="text-foreground font-bold text-xl mb-4 flex items-center gap-3">
               <span className="w-6 h-px bg-accent" />
               Service
             </h2>
             <GlassCard hover={false} className="space-y-2">
               <div className="flex items-start gap-3">
                 <span className="text-accent/40 mt-1">·</span>
-                <p className="text-white/70 text-sm">
-                  <span className="text-white font-semibold">Associate Editor</span> —{' '}
+                <p className="text-foreground/70 text-sm">
+                  <span className="text-foreground font-semibold">Associate Editor</span>,{' '}
                   <a
                     href="https://www.springer.com/journal/12283"
                     target="_blank"
@@ -275,8 +275,8 @@ export default function CVPage() {
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-accent/40 mt-1">·</span>
-                <p className="text-white/70 text-sm">
-                  <span className="text-white font-semibold">Peer Reviewer</span> — Multiple
+                <p className="text-foreground/70 text-sm">
+                  <span className="text-foreground font-semibold">Peer Reviewer</span> for multiple
                   top-50 sports science journals
                 </p>
               </div>

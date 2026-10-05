@@ -33,7 +33,7 @@ export default function Content() {
         <blockquote>
           I am never scared when I descend. I feel like the master of the universe, even if it&apos;s my mind playing tricks, because danger is all around.
         </blockquote>
-        <figcaption>&mdash; Romain Bardet for Rouleur, November 2020</figcaption>
+        <figcaption>Romain Bardet for Rouleur, November 2020</figcaption>
       </figure>
 
       <p>
@@ -141,7 +141,7 @@ export default function Content() {
         <blockquote>
           Soon I was on the climb, breathing through my ears as I fought the undulating ascent towards my first finish line. As I sprinted over the top, the video game came to life as I attacked the descent not as something to be survived, but as a race in itself. And it&apos;s here that I must give due credit to the disc brakes. Until that descent, I have never experienced so much control over braking as I held the tires on the absolute limit of traction.
         </blockquote>
-        <figcaption>&mdash; Chad Haga, after winning ITT stage 21st, Giro d&apos;Italia, June 2019</figcaption>
+        <figcaption>Chad Haga, after winning ITT stage 21st, Giro d&apos;Italia, June 2019</figcaption>
       </figure>
 
       <h2>Competitive advantages</h2>

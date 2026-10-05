@@ -4,7 +4,7 @@ import { GradientText } from '@/components/shared/gradient-text'
 import { teaching } from '@/content/teaching'
 
 export const metadata: Metadata = {
-  title: 'Teaching — Andrea Zignoli',
+  title: 'Teaching | Andrea Zignoli',
   description: 'Teaching experience by Andrea Zignoli in sports science and technology.',
 }
 
@@ -17,7 +17,7 @@ export default function TeachingPage() {
           <h1 className="text-4xl md:text-5xl font-bold">
             <GradientText>Teaching</GradientText>
           </h1>
-          <p className="text-white/50 text-sm max-w-xl pt-2">
+          <p className="text-foreground/50 text-sm max-w-xl pt-2">
             Academic teaching in sports science, mathematical modelling, and technology innovation.
           </p>
         </div>
@@ -30,13 +30,13 @@ export default function TeachingPage() {
                   {item.date.slice(0, 4)}
                 </div>
                 <div className="flex-1 space-y-1">
-                  <h3 className="text-white font-semibold text-sm leading-snug">{item.title}</h3>
+                  <h3 className="text-foreground font-semibold text-sm leading-snug">{item.title}</h3>
                   <p className="text-accent/70 text-xs font-mono">{item.type}</p>
-                  <p className="text-white/40 text-xs">
+                  <p className="text-foreground/55 text-xs">
                     {item.venue} · {item.location}
                   </p>
                   {item.description && (
-                    <p className="text-white/55 text-sm leading-relaxed pt-1">{item.description}</p>
+                    <p className="text-foreground/55 text-sm leading-relaxed pt-1">{item.description}</p>
                   )}
                   {item.link && (
                     <a

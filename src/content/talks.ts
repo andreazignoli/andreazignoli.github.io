@@ -39,7 +39,7 @@ export const talks: Talk[] = [
     type: 'Video',
     date: '2024-10-17',
     description:
-      'Development and application of Workout Reserve — an AI-driven tool that helps athletes measure their current effort against historical performances — with real-world applications in elite cycling and Ironman.',
+      'Development and application of Workout Reserve, an AI-driven tool that helps athletes measure their current effort against historical performances, with real-world applications in elite cycling and Ironman.',
     link: 'https://www.youtube.com/watch?v=xwxBGwRLgjI',
     linkLabel: 'Watch',
   },
@@ -68,7 +68,7 @@ export const talks: Talk[] = [
     date: '2021-06-15',
     location: 'Remote',
     description:
-      'Hands-on tutorial exploring methodologies for correctly interpreting wearable sensor data in sports — from discerning useful signals to making data-driven, objective choices.',
+      'Hands-on tutorial exploring methodologies for correctly interpreting wearable sensor data in sports, from discerning useful signals to making data-driven, objective choices.',
   },
   {
     title: 'DeMotu Project: 3D Printed Human Knee for Biomechanics Research',

@@ -9,10 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#0a0a0a',
-        accent: '#00dc82',
-        secondary: '#155799',
-        glass: 'rgba(255,255,255,0.04)',
+        background: 'rgb(var(--background) / <alpha-value>)',
+        foreground: 'rgb(var(--foreground) / <alpha-value>)',
+        accent: {
+          DEFAULT: 'rgb(var(--accent) / <alpha-value>)',
+          foreground: 'rgb(var(--accent-foreground) / <alpha-value>)',
+        },
+        secondary: 'rgb(var(--secondary) / <alpha-value>)',
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
@@ -29,7 +32,7 @@ const config: Config = {
         },
         cellRipple: {
           '0%':   { opacity: '0.15' },
-          '40%':  { opacity: '0.7', backgroundColor: 'rgba(0,220,130,0.18)' },
+          '40%':  { opacity: '0.7', backgroundColor: 'rgb(var(--accent) / 0.18)' },
           '100%': { opacity: '0.15', backgroundColor: 'transparent' },
         },
       },

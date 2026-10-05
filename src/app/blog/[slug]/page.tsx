@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `https://andreazignoli.github.io${post.image}`
     : undefined
   return {
-    title: `${post.title} — Andrea Zignoli`,
+    title: `${post.title} | Andrea Zignoli`,
     description: post.excerpt,
     openGraph: {
       title: post.title,
@@ -61,7 +61,7 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Back */}
         <Link
           href="/blog"
-          className="inline-flex items-center gap-1 text-white/40 hover:text-accent transition-colors text-sm font-mono mb-8"
+          className="inline-flex items-center gap-1 text-foreground/55 hover:text-accent transition-colors text-sm font-mono mb-8"
         >
           ← Blog
         </Link>
@@ -75,8 +75,8 @@ export default async function BlogPostPage({ params }: Props) {
               day: 'numeric',
             })}
           </time>
-          <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight">{post.title}</h1>
-          <p className="text-white/55 leading-relaxed">{post.excerpt}</p>
+          <h1 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">{post.title}</h1>
+          <p className="text-foreground/55 leading-relaxed">{post.excerpt}</p>
         </div>
 
         {/* Divider */}
@@ -91,12 +91,12 @@ export default async function BlogPostPage({ params }: Props) {
 
         {/* External link */}
         {post.externalLink && (
-          <div className="mt-10 pt-6 border-t border-white/[0.06]">
+          <div className="mt-10 pt-6 border-t border-foreground/[0.06]">
             <a
               href={post.externalLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 glass rounded-lg text-accent text-sm font-mono hover:bg-white/[0.08] transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2 glass rounded-lg text-accent text-sm font-mono hover:bg-foreground/[0.08] transition-colors"
             >
               Read original post ↗
             </a>
@@ -104,10 +104,10 @@ export default async function BlogPostPage({ params }: Props) {
         )}
 
         {/* Bottom nav */}
-        <div className="mt-12 pt-6 border-t border-white/[0.06]">
+        <div className="mt-12 pt-6 border-t border-foreground/[0.06]">
           <Link
             href="/blog"
-            className="text-white/35 hover:text-accent transition-colors text-sm font-mono"
+            className="text-foreground/50 hover:text-accent transition-colors text-sm font-mono"
           >
             ← All posts
           </Link>

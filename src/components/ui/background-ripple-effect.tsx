@@ -1,26 +1,44 @@
 'use client'
 
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import { cn } from '@/lib/utils'
 
 export const BackgroundRippleEffect = ({
-  rows = 18,
-  cols = 27,
+  rows: initialRows = 18,
+  cols: initialCols = 27,
   cellSize = 56,
 }: {
   rows?: number
   cols?: number
   cellSize?: number
 }) => {
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [grid, setGrid] = useState({ rows: initialRows, cols: initialCols })
   const [clickedCell, setClickedCell] = useState<{ row: number; col: number } | null>(null)
   const [rippleKey, setRippleKey] = useState(0)
 
+  // Size the grid to its container so it always spans the full width, however wide the screen
+  useEffect(() => {
+    const el = containerRef.current
+    if (!el) return
+    const update = () => {
+      const { width, height } = el.getBoundingClientRect()
+      const cols = Math.ceil(width / cellSize) + 1
+      const rows = Math.ceil(height / cellSize) + 1
+      setGrid((g) => (g.cols === cols && g.rows === rows ? g : { rows, cols }))
+    }
+    update()
+    const observer = new ResizeObserver(update)
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [cellSize])
+
   return (
-    <div className="absolute inset-0 h-full w-full overflow-hidden">
+    <div ref={containerRef} className="absolute inset-0 h-full w-full overflow-hidden">
       <DivGrid
         key={rippleKey}
-        rows={rows}
-        cols={cols}
+        rows={grid.rows}
+        cols={grid.cols}
         cellSize={cellSize}
         clickedCell={clickedCell}
         onCellClick={(row, col) => {

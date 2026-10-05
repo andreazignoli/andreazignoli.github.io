@@ -6,7 +6,7 @@ export const posts: BlogPost[] = [
     title: 'Down the Poggio: bike handling at the Milano-Sanremo Classic',
     date: '2026-03-17',
     excerpt:
-      'The descent from the Poggio is where Milano-Sanremo is won or lost. A look at what makes those 3.5 km so decisive — and what the science of bike handling and optimal trajectories can tell us about it.',
+      'The descent from the Poggio is where Milano-Sanremo is won or lost. A look at what makes those 3.5 km so decisive, and what the science of bike handling and optimal trajectories can tell us about it.',
     image: '/images/down_the_poggio_diorama.png',
     hasContent: true,
   },
@@ -15,7 +15,7 @@ export const posts: BlogPost[] = [
     title: 'A model that can evaluate the maximal mean power during exercise?',
     date: '2024-03-21',
     excerpt:
-      "Spragg et al. 2023 aligns perfectly with the Athletica Workout Reserve concept — a real-time mechanical model that monitors how an athlete's maximal mean power shifts as fatigue accumulates.",
+      "Spragg et al. 2023 aligns perfectly with the Athletica Workout Reserve concept: a real-time mechanical model that monitors how an athlete's maximal mean power shifts as fatigue accumulates.",
     hasContent: true,
   },
   {
@@ -23,7 +23,7 @@ export const posts: BlogPost[] = [
     title: 'Of eagles, sunflowers, and cycling trajectories',
     date: '2023-11-23',
     excerpt:
-      'What does a hunting eagle have in common with a sunflower? Both follow Fibonacci spiral patterns — and experienced cyclists may trace clothoids in their descending lines.',
+      'What does a hunting eagle have in common with a sunflower? Both follow Fibonacci spiral patterns, and experienced cyclists may trace clothoids in their descending lines.',
     hasContent: true,
   },
   {
@@ -31,7 +31,7 @@ export const posts: BlogPost[] = [
     title: 'Notes on bike handling in road cycling',
     date: '2022-01-01',
     excerpt:
-      'Bike handling is a fascinating and under-studied topic in road cycling. I define it as the ability to consciously explore large portions of the gg diagram — and it can be worth over a minute in a 5-km technical section.',
+      'Bike handling is a fascinating and under-studied topic in road cycling. I define it as the ability to consciously explore large portions of the gg diagram, and it can be worth over a minute in a 5-km technical section.',
     hasContent: true,
   },
   {
@@ -55,7 +55,7 @@ export const posts: BlogPost[] = [
     title: 'Oxynet: A collective intelligence approach to cardiopulmonary test interpretation',
     date: '2021-05-27',
     excerpt:
-      'How a crowd-sourced dataset of expert annotations combined with deep learning can automate and standardise CPET interpretation at scale — while tackling the AI chasm from a different angle.',
+      'How a crowd-sourced dataset of expert annotations combined with deep learning can automate and standardise CPET interpretation at scale, while tackling the AI chasm from a different angle.',
     hasContent: true,
   },
   {
@@ -71,7 +71,7 @@ export const posts: BlogPost[] = [
     title: 'How AI is (not) going to change sport science',
     date: '2019-01-11',
     excerpt:
-      "We didn't need electric guitars to make better music — and we don't need AI to become better coaches. But we needed electric guitars to create new sounds. AI in sport science will be similar.",
+      "We didn't need electric guitars to make better music, and we don't need AI to become better coaches. But we needed electric guitars to create new sounds. AI in sport science will be similar.",
     externalLink: 'https://hiitscience.com/how-ai-is-not-going-to-change-sport-science/',
   },
 ]

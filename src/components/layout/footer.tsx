@@ -80,7 +80,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/[0.06] py-12 px-6">
+    <footer className="border-t border-foreground/[0.06] py-12 px-6">
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-6">
         <div className="flex flex-wrap justify-center gap-4">
           {socialLinks.map(({ label, href, icon }) => (
@@ -90,14 +90,14 @@ export function Footer() {
               target={href.startsWith('mailto') ? undefined : '_blank'}
               rel="noopener noreferrer"
               aria-label={label}
-              className="flex items-center gap-2 text-white/40 hover:text-accent transition-colors text-sm"
+              className="flex items-center gap-2 text-foreground/55 hover:text-accent transition-colors text-sm"
             >
               {icon}
               <span className="hidden sm:inline">{label}</span>
             </a>
           ))}
         </div>
-        <p className="text-white/25 text-xs text-center">
+        <p className="text-foreground/50 text-xs text-center">
           © {new Date().getFullYear()} Andrea Zignoli · AI Sport Tech Consultant · Verona, Italy
         </p>
       </div>

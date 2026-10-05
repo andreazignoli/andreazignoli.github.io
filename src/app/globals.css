@@ -3,11 +3,50 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
-  --accent: #00dc82;
-  --secondary: #155799;
-  --foreground: #ededed;
-  --muted: rgba(255, 255, 255, 0.5);
+  /* Theme tokens are RGB triplets so Tailwind opacity modifiers work (e.g. text-foreground/50) */
+  --background: 10 10 10;
+  --foreground: 255 255 255;
+  --accent: 0 220 130;
+  --accent-foreground: 0 0 0;
+  --secondary: 21 87 153;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --scrollbar-thumb: #1a1a1a;
+  --scrollbar-thumb-hover: #2a2a2a;
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --photo-card: #111111;
+  color-scheme: dark;
+}
+
+/* Light palette: applied when chosen explicitly, or by the OS when no choice is stored */
+:root[data-theme='light'] {
+  --background: 250 250 249;
+  --foreground: 10 10 10;
+  --accent: 0 133 80;
+  --accent-foreground: 255 255 255;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --scrollbar-thumb: #d4d4d4;
+  --scrollbar-thumb-hover: #a3a3a3;
+  --card-shadow: rgba(0, 0, 0, 0.08);
+  --photo-card: #ffffff;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    --background: 250 250 249;
+    --foreground: 10 10 10;
+    --accent: 0 133 80;
+    --accent-foreground: 255 255 255;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.08);
+    --scrollbar-thumb: #d4d4d4;
+    --scrollbar-thumb-hover: #a3a3a3;
+    --card-shadow: rgba(0, 0, 0, 0.08);
+    --photo-card: #ffffff;
+    color-scheme: light;
+  }
 }
 
 * {
@@ -20,8 +59,8 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
 }
 
 /* Scrollbar */
@@ -29,26 +68,26 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: rgb(var(--background));
 }
 ::-webkit-scrollbar-thumb {
-  background: #1a1a1a;
+  background: var(--scrollbar-thumb);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a2a2a;
+  background: var(--scrollbar-thumb-hover);
 }
 
 @layer components {
   .glass {
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--glass-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--glass-border);
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, #00dc82, #155799);
+    background: linear-gradient(135deg, rgb(var(--accent)), rgb(var(--secondary)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -66,7 +105,7 @@ body {
     z-index: -1;
     margin: -1px;
     border-radius: inherit;
-    background: linear-gradient(135deg, #00dc82, #155799);
+    background: linear-gradient(135deg, rgb(var(--accent)), rgb(var(--secondary)));
   }
 
   .section-padding {
@@ -79,18 +118,18 @@ body {
 
   /* Blog post prose styles */
   .blog-content {
-    @apply text-white/70 leading-relaxed;
+    @apply text-foreground/70 leading-relaxed;
   }
   .blog-content h1 {
-    @apply text-2xl md:text-3xl font-bold text-white mt-10 mb-4 leading-tight;
+    @apply text-2xl md:text-3xl font-bold text-foreground mt-10 mb-4 leading-tight;
   }
   .blog-content h2 {
-    @apply text-xl md:text-2xl font-bold text-white mt-10 mb-3 leading-tight;
-    border-left: 3px solid #00dc82;
+    @apply text-xl md:text-2xl font-bold text-foreground mt-10 mb-3 leading-tight;
+    border-left: 3px solid rgb(var(--accent));
     padding-left: 0.75rem;
   }
   .blog-content h3 {
-    @apply text-lg font-semibold text-white/90 mt-6 mb-2;
+    @apply text-lg font-semibold text-foreground/90 mt-6 mb-2;
   }
   .blog-content p {
     @apply mb-4 leading-relaxed;
@@ -99,10 +138,10 @@ body {
     @apply text-accent hover:underline;
   }
   .blog-content strong {
-    @apply text-white font-semibold;
+    @apply text-foreground font-semibold;
   }
   .blog-content em {
-    @apply text-white/85 italic;
+    @apply text-foreground/85 italic;
   }
   .blog-content ul {
     @apply list-none mb-4 space-y-2;
@@ -121,38 +160,38 @@ body {
     @apply pl-2;
   }
   .blog-content blockquote {
-    @apply border-l-2 border-accent/40 pl-4 my-6 text-white/55 italic;
+    @apply border-l-2 border-accent/40 pl-4 my-6 text-foreground/55 italic;
   }
   .blog-content figure {
     @apply my-8 text-center;
   }
   .blog-content figure img {
     @apply rounded-xl mx-auto max-w-full;
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgb(var(--foreground) / 0.06);
   }
   .blog-content figcaption {
-    @apply text-white/35 text-xs mt-3 font-mono leading-relaxed;
+    @apply text-foreground/50 text-xs mt-3 font-mono leading-relaxed;
   }
   .blog-content figure.quote {
     @apply glass rounded-xl p-6 my-8 text-left not-italic;
-    border-left: 3px solid rgba(0,220,130,0.4);
+    border-left: 3px solid rgb(var(--accent) / 0.4);
   }
   .blog-content figure.quote blockquote {
-    @apply border-none pl-0 text-white/70 italic text-base;
+    @apply border-none pl-0 text-foreground/70 italic text-base;
   }
   .blog-content figure.quote figcaption {
-    @apply text-white/35 text-xs mt-3 not-italic;
+    @apply text-foreground/50 text-xs mt-3 not-italic;
   }
   .blog-content code {
-    @apply font-mono text-accent text-sm bg-white/[0.06] px-1.5 py-0.5 rounded;
+    @apply font-mono text-accent text-sm bg-foreground/[0.06] px-1.5 py-0.5 rounded;
   }
   .blog-content hr {
-    @apply border-white/[0.08] my-10;
+    @apply border-foreground/[0.08] my-10;
   }
   .blog-content .highlight {
-    background-color: rgba(0,220,130,0.15);
+    background-color: rgb(var(--accent) / 0.15);
     padding: 0 3px;
     border-radius: 2px;
-    color: rgba(255,255,255,0.9);
+    color: rgb(var(--foreground) / 0.9);
   }
 }

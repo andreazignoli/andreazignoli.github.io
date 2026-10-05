@@ -5,7 +5,7 @@ import { GradientText } from '@/components/shared/gradient-text'
 import { posts } from '@/content/posts'
 
 export const metadata: Metadata = {
-  title: 'Blog — Andrea Zignoli',
+  title: 'Blog | Andrea Zignoli',
   description: 'Blog posts by Andrea Zignoli on AI, sports science, and performance modelling.',
 }
 
@@ -20,7 +20,7 @@ export default function BlogPage() {
           <h1 className="text-4xl md:text-5xl font-bold">
             <GradientText>Blog</GradientText>
           </h1>
-          <p className="text-white/50 text-sm max-w-xl pt-2">
+          <p className="text-foreground/50 text-sm max-w-xl pt-2">
             Thoughts on AI, sports science, performance modelling, and the intersection of research
             and engineering.
           </p>
@@ -39,11 +39,11 @@ export default function BlogPage() {
                 <div className="flex-1 space-y-1">
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="text-white font-semibold text-sm hover:text-accent transition-colors leading-snug"
+                    className="text-foreground font-semibold text-sm hover:text-accent transition-colors leading-snug"
                   >
                     {post.title}
                   </Link>
-                  <p className="text-white/50 text-xs leading-relaxed">{post.excerpt}</p>
+                  <p className="text-foreground/50 text-xs leading-relaxed">{post.excerpt}</p>
                   <div className="flex items-center gap-3 pt-1">
                     <Link
                       href={`/blog/${post.slug}`}
@@ -56,7 +56,7 @@ export default function BlogPage() {
                         href={post.externalLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs text-white/30 font-mono hover:text-white/60 transition-colors"
+                        className="text-xs text-foreground/50 font-mono hover:text-foreground/60 transition-colors"
                       >
                         Original ↗
                       </a>

@@ -1,0 +1,156 @@
+% compact_template.tex — Andrea Zignoli — Short CV template (2 pages)
+% Start a new application:  cp compact_template.tex compact_<company>.tex
+% Tailored copies (compact_*.tex, cover_letter_*.tex) are gitignored and stay local.
+% Edit the blocks marked TAILOR; everything else is the shared base.
+% Compile with: lualatex compact_<company>.tex  (needs the Ubuntu font installed;
+% do NOT add \usepackage[T1]{fontenc}: it overrides fontspec and drops Ubuntu)
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{geometry}
+\geometry{top=1.3cm, bottom=1.3cm, left=1.8cm, right=1.8cm}
+
+\usepackage{fontspec}
+\setmainfont{Ubuntu}
+
+\usepackage{microtype}
+\usepackage{parskip}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{0pt}
+\usepackage{setspace}
+\setstretch{1.1}
+
+\usepackage{titlesec}
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}[\vspace{-4pt}\rule{\linewidth}{0.6pt}\vspace{2pt}]
+\titlespacing{\section}{0pt}{10pt}{4pt}
+
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=2pt, topsep=3pt, partopsep=0pt, leftmargin=1.4em}
+\setlist[enumerate]{itemsep=2pt, topsep=3pt, partopsep=0pt, leftmargin=1.6em}
+
+\usepackage{array, booktabs, tabularx}
+\usepackage{xcolor}
+\definecolor{linkcolor}{HTML}{1a1a8c}
+\usepackage[colorlinks=true, urlcolor=linkcolor, hidelinks,
+  pdftitle={Andrea Zignoli -- Resume},
+  pdfauthor={Andrea Zignoli},
+  pdfsubject={Resume}]{hyperref}
+
+% ── helper: right-aligned date on same line as role ──────────────────────────
+\newcommand{\entry}[3]{%          {Date}{Role/Title}{Institution}
+  \textbf{#2}\hfill\textit{\small#1}\\[1pt]
+  \small#3\par\vspace{5pt}%
+}
+\newcommand{\pub}[3]{%            {Authors}{Title}{Venue, Year}
+  \hangindent=1em\hangafter=1
+  \small #1. \textit{#2}. #3.\par\vspace{3pt}%
+}
+
+\pagestyle{plain}
+
+\begin{document}
+
+%% ── HEADER ─────────────────────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries Andrea Zignoli}\\[3pt]
+  % TAILOR: headline that mirrors the job title's keywords
+  {\large Applied Sport Scientist — Endurance Performance \& AI}\\[5pt]
+  {\small
+    % TAILOR: add relocation note if needed, e.g. (open to relocating to <city>)
+    Verona, Italy \quad|\quad
+    \href{mailto:andrea.zignoli@unitn.it}{andrea.zignoli@unitn.it} \quad|\quad
+    \href{https://andreazignoli.com}{andreazignoli.com} \\[2pt]
+    \href{https://andreazignoli.github.io/publications/}{Publications} \quad|\quad
+    \href{https://linkedin.com/in/andrea-zignoli-8080a438}{LinkedIn} \quad|\quad
+    \href{https://github.com/andreazignoli}{GitHub}
+  }
+\end{center}
+\vspace{4pt}
+
+% TAILOR: summary. Lead with what the role values most; keep to ~6 lines.
+{\small Sport scientist with 10+ years of turning exercise physiology research into decisions inside endurance-training and wearable products. Since 2020, developing human-performance models and leading the back-end team at Athletica, an AI-driven endurance training platform; previously data scientist at Supersapiens (continuous glucose monitoring for athletes). 40+ peer-reviewed journal papers on endurance physiology, performance modelling, and validating AI models against expert judgement. Fluent in the language of data science and ML teams, so research questions become concrete data, label, and benchmark requirements. PhD (Movement Science), M.Eng.\ (Mechatronics). Associate Editor, \textit{Sports Engineering} (Springer).}
+
+%% ── HIGHLIGHTS ──────────────────────────────────────────────────────────────
+\section{Selected Highlights}
+% TAILOR: one bullet per key requirement in the job ad; reorder and reword.
+
+\begin{itemize}
+  \item \textbf{Validating AI against expert judgement.} Created Oxynet, a deep-learning system that detects ventilatory thresholds in cardiopulmonary exercise tests, trained on expert-labelled data and tested on data crowdsourced across labs, devices, and operators. Latest work on AI-based threshold detection published in \textit{Sports Medicine} (2026).
+  \item \textbf{Science inside training products.} Six years modelling the physiological and biomechanical response to exercise for Athletica's training platform, plus applied work for Supersapiens (CGM), Tyme Wear (wearables), and Enhance-d (nutrition).
+  \item \textbf{Industry--academic research.} Turned product work into peer-reviewed science: a series of CGM studies in athletes from Supersapiens and further papers from Athletica, with industry and academic co-authors.
+  \item \textbf{Partnerships \& research governance.} Research stays at four institutions on four continents; funded projects with Université de Franche-Comté and the University of Melbourne; industry testing contract with Selle Royal. Prepared and submitted multiple study protocols for ethics committee approval.
+  \item \textbf{Leading teams and projects.} Lead the back-end team at Athletica; set up the Deep Learning Lab at the ProM Facility, Trento (2019--2020); led multiple research and industry projects; mentored interns and co-advised 9 MSc theses.
+  \item \textbf{Scientific voice.} Associate Editor at \textit{Sports Engineering}; podcast guest on AI in endurance coaching; conference talks at the World Congress of Cycling Science and Science \& Cycling.
+\end{itemize}
+
+%% ── INDUSTRY ────────────────────────────────────────────────────────────────
+\section{Industry Experience}
+
+\entry{Apr 2020 – present}{Applied Research Scientist / Product Expert — Athletica Inc.}{AI-driven endurance training platform. Lead the back-end team (training-data processing and analysis); develop mathematical models of human performance used by the platform; peer-reviewed publications from platform work.}
+\entry{Apr 2021 – Mar 2024}{Data Scientist (full-time) — Supersapiens}{Continuous glucose monitoring for athletes: signal processing, time-series analysis, anomaly detection, pattern recognition; peer-reviewed studies on glucose dynamics in athletes.}
+\entry{Dec 2024 – present}{AI Consultant — Tyme Wear}{Wearable health tech: deep-learning models for physiological signal processing.}
+\entry{Jan 2025 – present}{AI Consultant — Enhance-d}{Sports nutrition platform: LLM pipelines and agentic AI for personalised nutrition.}
+
+%% ── ACADEMIC ────────────────────────────────────────────────────────────────
+\section{Academic Experience}
+
+\entry{Dec 2021 – present}{Associate Editor — Sports Engineering (Springer)}{Manuscript handling; partnerships with sport-tech companies and governing bodies.}
+\entry{Dec 2021 – present}{Research Fellow \& Teaching Fellow — University of Trento}{Mathematical models for sport technology (Dept.\ Industrial Engineering); MSc module on modelling in sport, Exercise Science and Human Movement (CIBIO).}
+\entry{Nov 2017 – Dec 2021}{Postdoctoral Researcher — University of Trento}{First-principles and data-driven models for sport technology; set up the Deep Learning Lab at the ProM Facility.}
+\entry{2015 – 2022}{Visiting Researcher}{Univ.\ of Queensland, AU (2022) · Univ.\ of Southern Denmark, DK (2021--22) · KAST, JP (2016--17) · Univ.\ of Calgary, CA (2015).}
+
+%% ── EDUCATION ───────────────────────────────────────────────────────────────
+\section{Education}
+
+\entry{2013 – 2016}{PhD, Movement Science \& Physical Exercise — University of Verona}{Bioenergetic and biomechanical models of cycling performance.}
+\entry{2008 – 2011}{M.Eng.\ Mechatronics — University of Trento}{Including a visiting semester at the University of Nottingham, UK.}
+
+%% ── PUBLICATIONS ────────────────────────────────────────────────────────────
+\section{Selected Publications (of 40+ peer-reviewed journal papers)}
+% TAILOR: pick ~8 papers closest to the role. Use the exact published titles.
+
+\pub{D. Keir, \textbf{A. Zignoli}, F.M. Maturana, D. Iannetta, J.M. Murias}{AI-driven analysis of cardiopulmonary exercise tests to identify gas exchange and ventilatory thresholds}{Sports Medicine, 2026}
+
+\pub{\textbf{A. Zignoli}, P. Whitehurst}{Real-time assessment of exercising maximal mean power and speed in endurance sports: a Garmin Connect IQ App}{Sports Engineering (Technical Note), 2025}
+
+\pub{\textbf{A. Zignoli}, B. Martinez-Gonzalez, K. Skroce, D.J. Lipman, H.C. Zisser, A. Giorgi}{Personalized nutrition and machine-learning: exploring the scope of continuous glucose monitoring in healthy individuals in uncontrolled settings}{Int J Sport Nutr Exerc Metab., 2024}
+
+\pub{K. Skroce, \textbf{A. Zignoli}, F.Y. Fontana, F.M. Maturana, D. Lipman, A. Tryfonos, M.C. Riddell, H.C. Zisser}{Real world interstitial glucose profiles of a large cohort of physically active men and women}{Sensors, 2024}
+
+\pub{\textbf{A. Zignoli}, A. Godin, L. Mourot}{Indoor running temporal variability for different speeds, inclinations, and estimation strategies}{PLOS ONE, 2023}
+
+\pub{\textbf{A. Zignoli}, A. Fornasiero, P. Rota, V. Muollo, L.A. Peyré-Tartaruga, D.A. Low \textit{et al}}{Oxynet: a collective intelligence that detects ventilatory thresholds in cardiopulmonary exercise tests}{European Journal of Sport Science, 2020}
+
+\pub{\textbf{A. Zignoli}, A. Fornasiero, F. Stella, B. Pellegrini, F. Schena, F. Biral, P.B. Laursen}{Expert-level classification of ventilatory thresholds from CPET data with recurrent neural networks}{European Journal of Sport Science, 2019}
+
+\pub{G. Vernillo, A. Savoldelli, \textbf{A. Zignoli} \textit{et al}}{Energy cost and kinematics of level, uphill and downhill running: fatigue-induced changes after a mountain ultramarathon}{Journal of Sports Sciences, 2015}
+
+%% ── FUNDING ─────────────────────────────────────────────────────────────────
+\section{Research Funding \& Industry Contracts (selected)}
+
+\begin{itemize}
+  \item ANTA Award (ECSS) — \textit{DARDAR}: stride-by-stride running kinematics in real-life conditions, with Univ.\ Franche-Comté (€20{,}000).
+  \item Industry contracts: Selle Royal, cycling-shoe testing protocol (€15{,}000); Athletica, training data platform (€9{,}600).
+  \item CARITRO post-doctoral fellowships (€60{,}000); Univ.\ Trento Starting Grant with Univ.\ Melbourne (€5{,}000); Cooperation Grant, Univ.\ Calgary (€3{,}000).
+\end{itemize}
+
+%% ── MEDIA & OUTREACH ────────────────────────────────────────────────────────
+\section{Talks \& Podcasts (selected)}
+
+\begin{itemize}
+  \item \textit{AI Agents, HRV Readiness \& the Next Era of Training} — Training Science Podcast, Dec 2025.
+  \item \textit{Modelling First: Building Smarter Endurance Training} — Training Science Podcast (Ep.\ 157), Mar 2025.
+  \item \textit{Incorporating the maximal mean power profile in time trial simulations} — Science \& Cycling Conf., Florence, 2024.
+  \item \textit{What AI-Powered Training Is \& What It Is Not} — Paul Laursen Podcast, Jun 2022.
+\end{itemize}
+
+%% ── MENTORING & SERVICE ─────────────────────────────────────────────────────
+\section{Teaching, Service \& Methods}
+
+{\small MSc teaching in sport technology, measurement systems, and biomechanics, Univ.\ Verona / Trento (2013--present). Reviewer for J.\ Sports Sciences, Scand.\ J.\ Med.\ Sci.\ Sports, Frontiers in Physiology, PLOS ONE, and others.}
+
+{\small \textbf{Physiology \& sensing:} CPET, lactate, HRV, CGM, IMU, GPS, power meters, EMG. \textbf{Statistics:} longitudinal and mixed models, hypothesis testing, uncertainty quantification. \textbf{Modelling \& ML:} first-principles and optimal-control models of performance; deep learning on physiological time series. \textbf{Tools:} Python, R, Matlab.}
+
+
+
+
+\end{document}

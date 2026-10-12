@@ -31,6 +31,12 @@ latex/**/*.run.xml
 latex/**/*.toc
 latex/**/*.xmpi
 
+# LaTeX — tailored job applications stay local (repo is public); templates are tracked
+latex/CV/compact_*.tex
+latex/CV/cover_letter_*.tex
+!latex/CV/compact_template.tex
+!latex/CV/cover_letter_template.tex
+
 # Claude Code personal config
 .claude/
 

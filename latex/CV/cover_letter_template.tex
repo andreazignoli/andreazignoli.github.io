@@ -1,0 +1,82 @@
+% cover_letter_template.tex — Andrea Zignoli — Cover letter template (1 page)
+% Start a new application:  cp cover_letter_template.tex cover_letter_<company>.tex
+% Tailored copies (compact_*.tex, cover_letter_*.tex) are gitignored and stay local.
+% Set \company and \role below, then replace every [bracketed] placeholder.
+% Compile with: lualatex cover_letter_<company>.tex  (needs the Ubuntu font installed;
+% do NOT add \usepackage[T1]{fontenc}: it overrides fontspec and drops Ubuntu)
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{geometry}
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+
+\usepackage{fontspec}
+\setmainfont{Ubuntu}
+
+\usepackage{microtype}
+\usepackage{parskip}
+\setlength{\parskip}{7pt}
+\setlength{\parindent}{0pt}
+\usepackage{setspace}
+\setstretch{1.15}
+
+% TAILOR: company and role
+\newcommand{\company}{[Company]}
+\newcommand{\role}{[Role]}
+
+\usepackage{xcolor}
+\definecolor{linkcolor}{HTML}{1a1a8c}
+\usepackage[colorlinks=true, urlcolor=linkcolor, hidelinks,
+  pdftitle={Andrea Zignoli -- Cover Letter},
+  pdfauthor={Andrea Zignoli}]{hyperref}
+
+\pagestyle{empty}
+
+\begin{document}
+
+%% ── HEADER ──────────────────────────────────────────────────────────────────
+{\LARGE\bfseries Andrea Zignoli}\\[3pt]
+{\small
+  Verona, Italy \quad|\quad
+  \href{mailto:andrea.zignoli@unitn.it}{andrea.zignoli@unitn.it} \quad|\quad
+  \href{https://andreazignoli.com}{andreazignoli.com} \quad|\quad
+  \href{https://linkedin.com/in/andrea-zignoli-8080a438}{LinkedIn}
+}
+
+\vspace{10pt}
+\rule{\linewidth}{0.5pt}
+\vspace{6pt}
+
+[Month Year]
+
+\textbf{\company}\\
+\role{} — Job Application
+
+\vspace{6pt}
+
+Dear \company{} Hiring Team,
+
+% Opening: the role, and the one-sentence reason you fit it.
+I am writing to apply for the \role{} position at \company. [One or two sentences on the combination that makes you a fit: sports science PhD, engineering background, and years of applied work inside deployed products.]
+
+% Evidence: the experience closest to what they do (Athletica, Supersapiens, Tyme Wear, Enhance-d).
+[The two or three most relevant pieces of work, each tied to a requirement in the ad. Be concrete: what you built, for whom, and what it changed.]
+
+% Rigour: validation and scientific credibility (Oxynet, ethics approvals, peer review).
+[How you make sure a model or a claim holds up: Oxynet validated against expert-labelled data from many labs, devices and operators; study protocols through ethics committees; 40+ peer-reviewed papers.]
+
+% Why you: what the physiology background adds to this particular role.
+[What your physiology and engineering background lets you do that a pure data scientist or a pure academic could not, for this team.]
+
+% Close: why this company, plus practicalities (relocation, visa) if relevant.
+[Why \company's mission matters to you. Relocation and work-authorization notes if needed.] I would welcome the opportunity to discuss how my experience could contribute to your team.
+
+Thank you for your time and consideration.
+
+\vspace{16pt}
+Sincerely,
+
+\vspace{8pt}
+\textbf{Andrea Zignoli}\\
+\href{mailto:andrea.zignoli@unitn.it}{andrea.zignoli@unitn.it} \quad|\quad \href{https://andreazignoli.com}{andreazignoli.com}
+
+\end{document}

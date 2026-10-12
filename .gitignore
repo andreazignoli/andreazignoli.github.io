@@ -37,6 +37,12 @@ latex/CV/cover_letter_*.tex
 !latex/CV/compact_template.tex
 !latex/CV/cover_letter_template.tex
 
+# LaTeX — loose images; the ones the .tex files use are already tracked.
+# A new image a .tex file needs must be added once with `git add -f`.
+latex/**/*.png
+latex/**/*.jpg
+latex/**/*.jpeg
+
 # Claude Code personal config
 .claude/
 
